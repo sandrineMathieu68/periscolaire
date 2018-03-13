@@ -8,25 +8,24 @@
 
 	<?php wp_head(); ?>
 </head>
-<!-- affichage des photo ? <img src="<?php //echo get_template_directory_uri(); ?>/img/enf.jpg" alt="" class="img-fluid">-->
 <body>
 
 <!-------------------------------------------------->
 <!-------------------    HEADER   ------_----------->
 <!-------------------------------------------------->
     <!-- saison 1 episode 08/13 -->
-    <!-- saison 7 episode 04/13 -->
+    <!-- saison 7 episode 04/   -->
 
-  <header class="container-fluid logo">
+  <header class="container-fluid mt-3 pt-3 pb-3 pr-4 pl-3">
     <div class="row">
-      <div class="col-3">
-        <img src="img/logo.svg" alt="" width="150" height="150">
+      <div class="col-3 ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/garcon.svg" alt="" class="img-fluid float-left" width="100" height="100">
       </div>
-      <div class="col-6 text-center title">
+      <div class="col-6 text-center nom">
         <h1>Le coin des Mômes</h1>
       </div>
        <div class="col-3">
-        <img src="img/logo.svg" alt="" width="50" height="50">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="" class="img-fluid float-right" width="100" height="100">
       </div>       
     </div>
     <div class="container-fluid menu">

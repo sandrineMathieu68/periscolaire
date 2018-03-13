@@ -1,0 +1,30 @@
+header {
+  background-color: #fff; }
+  header h1 {
+    font-family: 'Courgette-Regular';
+    color: red;
+    font-size: 60px; }
+  header .menu {
+    background-color: grey; }
+    header .menu nav {
+      background-color: green; }
+      header .menu nav .navbar-collapse {
+        background-color: pink;
+        height: 100px; }
+      header .menu nav ul {
+        background-color: black; }
+        header .menu nav ul li {
+          margin: 20px;
+          background-color: #fff; }
+          header .menu nav ul li a {
+            color: red; }
+          header .menu nav ul li i {
+            color: black; }
+          header .menu nav ul li a:hover {
+            color: black; }
+        header .menu nav ul li:hover {
+          background-color: pink; }
+          header .menu nav ul li:hover i {
+            color: yellow; }
+          header .menu nav ul li:hover a:hover {
+            color: black; }

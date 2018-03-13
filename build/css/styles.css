@@ -30,39 +30,41 @@ body {
   margin: 0;
   padding: 0;
   background-color: #529972;
-  color: #b7b6a7; }
+  color: #c5c3b7;
+  font-family: 'PlayfairDisplay-Regular'; }
 
-.menu {
-  font-size: 25px;
-  color: green; }
-  .menu nav .respons a {
-    font-size: 25px;
-    color: green; }
-  .menu nav .respons button span {
-    color: pink;
-    font-size: 20px; }
-  .menu nav .respons .navi ul li {
-    background-color: #5b9a64;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 20px; }
-    .menu nav .respons .navi ul li i {
-      padding-top: 15px;
-      color: #d50024; }
-    .menu nav .respons .navi ul li a {
-      font-family: 'CaviarDreams_Bold';
-      color: black;
-      padding: 10px; }
-    .menu nav .respons .navi ul li a:hover {
-      font-family: 'Courgette-Regular';
-      background-color: #f4fab0;
-      color: #d50024; }
-    .menu nav .respons .navi ul li .choix {
-      background-color: #2f3951;
-      text-align: center;
-      color: #d50024; }
+header {
+  background-color: #fff; }
+  header h1 {
+    font-family: 'Courgette-Regular';
+    color: red;
+    font-size: 60px; }
+  header .menu {
+    background-color: grey; }
+    header .menu nav {
+      background-color: green; }
+      header .menu nav .navbar-collapse {
+        background-color: pink;
+        height: 100px; }
+      header .menu nav ul {
+        background-color: black; }
+        header .menu nav ul li {
+          margin: 20px;
+          background-color: #fff; }
+          header .menu nav ul li a {
+            color: red; }
+          header .menu nav ul li i {
+            color: black; }
+          header .menu nav ul li a:hover {
+            color: black; }
+        header .menu nav ul li:hover {
+          background-color: pink; }
+          header .menu nav ul li:hover i {
+            color: yellow; }
+          header .menu nav ul li:hover a:hover {
+            color: black; }
 
-.car {
-  background-color: yellow; }
-  .car .slide {
-    background-color: pink; }
+footer {
+  background-color: pink;
+  color: black;
+  font-family: 'Courgette-Regular'; }

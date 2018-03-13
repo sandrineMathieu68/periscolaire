@@ -6,6 +6,7 @@ body
 {
     margin: 0;
     padding: 0;
-    @include couleur(2,1);
+    @include couleur(2,3);
+    font-family: 'PlayfairDisplay-Regular';
     
 }

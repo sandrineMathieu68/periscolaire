@@ -3,3 +3,49 @@
 // ###########################
 @import "color.scss";
 
+header{
+	background-color: #fff;
+	h1{
+		font-family: 'Courgette-Regular';
+		color: red;
+		font-size: 60px;
+	}
+	.menu{
+		background-color: grey;
+
+		nav{
+			background-color: green;
+			.navbar-collapse{
+				background-color: pink;
+				height: 100px;
+			}
+						ul{
+				background-color: black;
+				li{
+					margin: 20px;
+					background-color: #fff;
+					a{
+						color: red;
+					}
+					i{
+						color: black;
+					}
+					a:hover{
+						color: black;
+					}
+				}
+				li:hover{
+					
+					background-color: pink;
+					
+					i{
+						color: yellow;
+					}
+					a:hover{
+						color: black;
+					}
+				}
+			}
+		}	
+	}
+}
