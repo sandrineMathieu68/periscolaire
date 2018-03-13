@@ -1,0 +1,35 @@
+// ##############################
+// ######### Couleur ############
+// ##############################
+
+$une: #b7b6a7;
+$deux:#529972;
+$trois: #c5c3b7;
+$quatre: grey;
+$cinq: red;
+$six: black;
+$principale: rgba(12, 12, 12, 0.863);
+$secondaire: rgba(0, 0, 6, 0.863);
+
+$color_nav:rgba(130, 139, 138, 0.5);
+
+@mixin  couleur($background, $color){
+    @if $background == 0{}
+    @else if $background == 1{background-color: $une;}
+    @else if $background == 2{background-color: $deux;}
+    @else if $background == 3{background-color: $trois;}
+    @else if $background == 4{background-color: $quatre;}
+    @else if $background == 5{background-color: $cinq;}
+    @else if $background == 6{background-color: $six;}
+    @else if $background == 7{background-color: $principale;}
+    @else if $background == 8{background-color: $secondaire;}
+    @else if $background == 9{background-color: $color_nav;}
+
+    @if $color == 0{}
+    @else if $color == 1{color: $une;}
+    @else if $color == 2{color: $deux;}
+    @else if $color == 3{color: $trois;}
+}
+
+
+

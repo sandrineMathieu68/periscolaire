@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../../fonts/Courgette-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url("../../fonts/Pacifico-Regular.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: 'CaviarDreams_Bold';
+  src: url("../../fonts/CaviarDreams_Bold.ttf"); }
+
+@font-face {
+  font-family: 'Shorelines';
+  src: url("../../fonts/Shorelines.otf"); }
+
+@font-face {
+  font-family: 'Redoura';
+  src: url("../../fonts/Redoura.ttf"); }
+
+@font-face {
+  font-family: 'KGArrows';
+  src: url("../../fonts/KGArrows.ttf"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #529972;
+  color: #b7b6a7; }
+
+.menu {
+  font-size: 25px;
+  color: green; }
+  .menu nav .respons a {
+    font-size: 25px;
+    color: green; }
+  .menu nav .respons button span {
+    color: pink;
+    font-size: 20px; }
+  .menu nav .respons .navi ul li {
+    background-color: #5b9a64;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 20px; }
+    .menu nav .respons .navi ul li i {
+      padding-top: 15px;
+      color: #d50024; }
+    .menu nav .respons .navi ul li a {
+      font-family: 'CaviarDreams_Bold';
+      color: black;
+      padding: 10px; }
+    .menu nav .respons .navi ul li a:hover {
+      font-family: 'Courgette-Regular';
+      background-color: #f4fab0;
+      color: #d50024; }
+    .menu nav .respons .navi ul li .choix {
+      background-color: #2f3951;
+      text-align: center;
+      color: #d50024; }
+
+.car {
+  background-color: yellow; }
+  .car .slide {
+    background-color: pink; }

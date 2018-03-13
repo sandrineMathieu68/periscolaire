@@ -1,0 +1,59 @@
+@import "color.scss";
+
+
+
+.menu{
+	font-size: 25px;
+	color: green;
+	nav{
+		.respons{
+			a{	
+				font-size: 25px;
+				color: green;
+			}
+
+			button{
+
+				span{
+					color: pink;
+					font-size: 20px;
+				}
+			}
+			.navi{
+				
+				ul{
+					li{
+						background-color: #5b9a64;
+						margin-bottom: 15px;
+						margin-top: 15px;
+						margin-right: 20px;
+						i{
+							padding-top: 15px;
+							color: #d50024;
+						}
+						a{
+							font-family: 'CaviarDreams_Bold';
+							color: black;
+							padding: 10px;
+						}
+						a:hover {
+								font-family: 'Courgette-Regular';
+			    				background-color: #f4fab0;
+			    				color: #d50024;
+						}
+						.choix{
+							background-color:#2f3951;
+
+							text-align: center;
+							color: #d50024;
+						}						
+					}
+				}
+			}
+
+
+		}
+
+	}
+
+}
