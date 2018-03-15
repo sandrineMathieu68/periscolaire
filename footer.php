@@ -3,11 +3,57 @@
 <!-------------------------------------------------->
 
 <footer>
-<div class="container">
+<div class="container ">
+	<h1 class="text-center">L'équipe d'animation</h1>
   <div class="row">
-    <div class="col-12">	
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur consequatur voluptate ut impedit expedita quo distinctio error quaerat dignissimos. Illum accusantium ea esse autem numquam voluptatibus adipisci, possimus blanditiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam autem expedita eos molestiae consequatur sint nobis eveniet iure inventore nemo. Eius provident fugit, error dolorem ipsam quasi iusto neque dolores!</p>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
   	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>  
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>  
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>
+    <div class="col-3 col-sm-2 col-lg-1">	
+  		<p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+  		<p class="text-center">Prénom</p>
+  	</div>    	  	  	   	  	 
   </div>
 </div>  		
 

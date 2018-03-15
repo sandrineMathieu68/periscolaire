@@ -1,0 +1,5 @@
+@import "color.scss";
+
+section{
+	@include couleur(5,6);
+}

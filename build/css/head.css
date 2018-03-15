@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #529972;
-  color: #c5c3b7;
-  font-family: 'PlayfairDisplay-Regular'; }
+  background-color: #a0d6c6;
+  font-family: 'PlayfairDisplay-Regular';
+  background-image: url("../../img/trait.svg");
+  background-repeat: no-repeat; }

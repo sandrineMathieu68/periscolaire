@@ -1,34 +1,38 @@
 // ###########################
-// ######## Header ###########
+// ######## Head ###########
 // ###########################
 @import "color.scss";
 
 header{
-	background-color: #fff;
+//@include couleur(5,6);
+
+	
 	h1{
-		font-family: 'Courgette-Regular';
-		color: red;
-		font-size: 60px;
+		font-family: 'PatuaOne-Regular';
+		font-size: 45px;
 	}
 	.menu{
-		background-color: grey;
+		
 
 		nav{
-			background-color: green;
+			@include couleur(5,6);
 			.navbar-collapse{
-				background-color: pink;
+				@include couleur(7,6);
 				height: 100px;
 			}
 						ul{
-				background-color: black;
+				@include couleur(5,6);
 				li{
 					margin: 20px;
-					background-color: #fff;
+					@include couleur(1,6);
+					border: 2px solid #a6ef18;
 					a{
-						color: red;
+						color: #FFF;
 					}
 					i{
-						color: black;
+						padding-left: 5px;
+						padding-right: 5px;
+						color: #f968d7;
 					}
 					a:hover{
 						color: black;
@@ -36,10 +40,10 @@ header{
 				}
 				li:hover{
 					
-					background-color: pink;
+					@include couleur(1,6);
 					
 					i{
-						color: yellow;
+						color: #ffff9f;
 					}
 					a:hover{
 						color: black;

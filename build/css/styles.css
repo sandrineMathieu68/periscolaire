@@ -26,45 +26,57 @@
   font-family: 'KGArrows';
   src: url("../../fonts/KGArrows.ttf"); }
 
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #529972;
-  color: #c5c3b7;
-  font-family: 'PlayfairDisplay-Regular'; }
+  background-color: #a0d6c6;
+  font-family: 'PlayfairDisplay-Regular';
+  background-image: url("../../img/trait.svg");
+  background-repeat: no-repeat; }
 
-header {
-  background-color: #fff; }
-  header h1 {
-    font-family: 'Courgette-Regular';
-    color: red;
-    font-size: 60px; }
-  header .menu {
-    background-color: grey; }
-    header .menu nav {
-      background-color: green; }
-      header .menu nav .navbar-collapse {
-        background-color: pink;
-        height: 100px; }
-      header .menu nav ul {
-        background-color: black; }
-        header .menu nav ul li {
-          margin: 20px;
-          background-color: #fff; }
-          header .menu nav ul li a {
-            color: red; }
-          header .menu nav ul li i {
-            color: black; }
-          header .menu nav ul li a:hover {
-            color: black; }
-        header .menu nav ul li:hover {
-          background-color: pink; }
-          header .menu nav ul li:hover i {
-            color: yellow; }
-          header .menu nav ul li:hover a:hover {
-            color: black; }
+header h1 {
+  font-family: 'PatuaOne-Regular';
+  font-size: 45px; }
+
+header .menu nav {
+  background-color: white; }
+  header .menu nav .navbar-collapse {
+    background-color: #00c3f7;
+    height: 100px; }
+  header .menu nav ul {
+    background-color: white; }
+    header .menu nav ul li {
+      margin: 20px;
+      background-color: #a0d6c6;
+      border: 2px solid #a6ef18; }
+      header .menu nav ul li a {
+        color: #FFF; }
+      header .menu nav ul li i {
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #f968d7; }
+      header .menu nav ul li a:hover {
+        color: black; }
+    header .menu nav ul li:hover {
+      background-color: #a0d6c6; }
+      header .menu nav ul li:hover i {
+        color: #ffff9f; }
+      header .menu nav ul li:hover a:hover {
+        color: black; }
+
+section {
+  background-color: white; }
 
 footer {
-  background-color: pink;
-  color: black;
-  font-family: 'Courgette-Regular'; }
+  background-color: white;
+  font-family: 'Redoura';
+  padding-top: 20px; }
+  footer h1 {
+    font-family: 'PatuaOne-Regular';
+    margin-bottom: 30px; }
+  footer .avatar {
+    background-color: #a0d6c6; }

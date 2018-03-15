@@ -6,13 +6,6 @@
 <!-------------------------------------------------->
         <!-- saison 1 episode 10/13 -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Coucou, c'est nous !<i class="fa fa-wpexplorer" aria-hidden="true"></i></h1>
-    </div>
-  </div>
-</div>
  
 <section>
   <div class="container">

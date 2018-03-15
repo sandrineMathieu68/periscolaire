@@ -1,4 +1,9 @@
 footer {
-  background-color: pink;
-  color: black;
-  font-family: 'Courgette-Regular'; }
+  background-color: white;
+  font-family: 'Redoura';
+  padding-top: 20px; }
+  footer h1 {
+    font-family: 'PatuaOne-Regular';
+    margin-bottom: 30px; }
+  footer .avatar {
+    background-color: #a0d6c6; }

@@ -16,20 +16,20 @@
     <!-- saison 1 episode 08/13 -->
     <!-- saison 7 episode 04/   -->
 
-  <header class="container-fluid mt-3 pt-3 pb-3 pr-4 pl-3">
+  <header class="container-fluid  pt-3 pb-3 pr-4 pl-3">
     <div class="row">
       <div class="col-3 ">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/garcon.svg" alt="" class="img-fluid float-left" width="100" height="100">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/garcon.svg" alt="" class="img-fluid float-left" width="60" height="60">
       </div>
       <div class="col-6 text-center nom">
         <h1>Le coin des Mômes</h1>
       </div>
        <div class="col-3">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="" class="img-fluid float-right" width="100" height="100">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="" class="img-fluid float-right" width="60" height="60">
       </div>       
     </div>
     <div class="container-fluid menu">
-  <nav class="navbar navbar-expand-sm  " data-toggle="affix">
+  <nav class="navbar navbar-expand-sm " data-toggle="affix">
     <div class="mx-auto d-sm-flex d-block flex-sm-nowrap respons">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>

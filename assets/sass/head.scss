@@ -6,7 +6,10 @@ body
 {
     margin: 0;
     padding: 0;
-    @include couleur(2,3);
+    @include couleur(1,6);
     font-family: 'PlayfairDisplay-Regular';
-    
-}
+    background-image: url('../../img/trait.svg') ;
+    background-repeat: no-repeat;
+
+
+} 

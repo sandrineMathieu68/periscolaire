@@ -2,12 +2,14 @@
 // ######### Couleur ############
 // ##############################
 
-$une: #b7b6a7;
-$deux:#529972;
-$trois: #c5c3b7;
-$quatre: grey;
-$cinq: red;
+$une: #a0d6c6;
+$deux:#e1daca;
+$trois: #ffff9f;
+$quatre: #a6ef18;
+$cinq: white;
 $six: black;
+$sept: #00c3f7;
+$huit: #f968d7;
 $principale: rgba(12, 12, 12, 0.863);
 $secondaire: rgba(0, 0, 6, 0.863);
 
@@ -21,8 +23,8 @@ $color_nav:rgba(130, 139, 138, 0.5);
     @else if $background == 4{background-color: $quatre;}
     @else if $background == 5{background-color: $cinq;}
     @else if $background == 6{background-color: $six;}
-    @else if $background == 7{background-color: $principale;}
-    @else if $background == 8{background-color: $secondaire;}
+    @else if $background == 7{background-color: $sept;}
+    @else if $background == 8{background-color: $huit;}
     @else if $background == 9{background-color: $color_nav;}
 
     @if $color == 0{}
