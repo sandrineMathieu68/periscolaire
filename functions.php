@@ -58,7 +58,7 @@ add_action('after_setup_theme', 'lgmac_setup');
 
 // Modèle du résultat
 // <!-- saison 1 episode 10/13 12MN -->
-function lgmac_give_me_meta_01($date1, $date2, $cat){
+function lgmac_give_me_meta_01($date1, $date2, $cat, $tags){
 
 	$chaine  = 'publié le <time class="entry-date" datetime="';
 	$chaine .= $date1;
@@ -66,6 +66,7 @@ function lgmac_give_me_meta_01($date1, $date2, $cat){
 	$chaine .= $date2;
 	$chaine .= '</time> dans la catégorie ';
 	$chaine .= $cat;
+	$chaine .= ' avec les étiquettes: '.$tags;
 
 	return $chaine;
 }

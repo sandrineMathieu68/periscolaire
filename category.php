@@ -9,13 +9,13 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Coucou, c'est nous !<i class="fa fa-wpexplorer" aria-hidden="true"></i></h1>
+      <h1 class="text-center"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Affichage par catégorie category.scss</h1>
     </div>
   </div>
 </div>
  
 <section><!-- affichage des article saissi dans wordpress avec lien sur titre et img-->
-  <div class="container">
+  <div class="container category">
     <div class="row">
       <div class="col-12">
         <p class="lead">Archive de la catégorie <?php single_cat_title('', true); ?></p>

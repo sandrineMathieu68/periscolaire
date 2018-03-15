@@ -50,7 +50,7 @@ header .menu nav {
   header .menu nav ul {
     background-color: white; }
     header .menu nav ul li {
-      margin: 20px;
+      margin: 10px;
       background-color: #a0d6c6;
       border: 2px solid #a6ef18; }
       header .menu nav ul li a {
@@ -68,8 +68,22 @@ header .menu nav {
       header .menu nav ul li:hover a:hover {
         color: black; }
 
-section {
-  background-color: white; }
+.articles {
+  background-color: #f968d7; }
+
+.category {
+  background-color: #ffff9f;
+  padding-top: 2%; }
+
+.single {
+  background-color: #e1daca;
+  padding-top: 2%; }
+
+.content {
+  background-color: #a6ef18; }
+
+.etiquettes {
+  background-color: #ffff9f; }
 
 footer {
   background-color: white;
