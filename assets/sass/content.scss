@@ -1,0 +1,5 @@
+@import "color.scss";
+.content{
+		@include couleur(4,6);
+
+}

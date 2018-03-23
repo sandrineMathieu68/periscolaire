@@ -3,6 +3,18 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../../fonts/GrandHotel-Regular.ttf"); }
+
+@font-face {
+  font-family: 'HomemadeApple-Regular.ttf';
+  src: url("../../fonts/HomemadeApple-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url("../../fonts/Playball-Regular.ttf"); }
+
+@font-face {
   font-family: 'Pacifico-Regular';
   src: url("../../fonts/Pacifico-Regular.ttf"); }
 
@@ -26,43 +38,82 @@
   font-family: 'KGArrows';
   src: url("../../fonts/KGArrows.ttf"); }
 
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #529972;
-  color: #b7b6a7; }
+  background-color: white;
+  font-family: 'PlayfairDisplay-Regular';
+  background-image: url("../../img/bus3.svg");
+  background-repeat: no-repeat; }
 
-.menu {
-  font-size: 25px;
-  color: green; }
-  .menu nav .respons a {
-    font-size: 25px;
-    color: green; }
-  .menu nav .respons button span {
-    color: pink;
-    font-size: 20px; }
-  .menu nav .respons .navi ul li {
-    background-color: #5b9a64;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 20px; }
-    .menu nav .respons .navi ul li i {
-      padding-top: 15px;
-      color: #d50024; }
-    .menu nav .respons .navi ul li a {
-      font-family: 'CaviarDreams_Bold';
-      color: black;
-      padding: 10px; }
-    .menu nav .respons .navi ul li a:hover {
-      font-family: 'Courgette-Regular';
-      background-color: #f4fab0;
-      color: #d50024; }
-    .menu nav .respons .navi ul li .choix {
-      background-color: #2f3951;
-      text-align: center;
-      color: #d50024; }
+header h1 {
+  font-family: 'GrandHotel-Regular';
+  font-size: 50px;
+  color: #fff;
+  padding-top: 10px; }
 
-.car {
-  background-color: yellow; }
-  .car .slide {
-    background-color: pink; }
+header .menu nav {
+  margin-top: 65px; }
+  header .menu nav ul li {
+    margin-left: 0px;
+    margin-right: 0px; }
+    header .menu nav ul li a {
+      font-family: 'PatuaOne-Regular';
+      color: #a0d6c6;
+      font-size: 20px;
+      margin-right: 13px; }
+    header .menu nav ul li i {
+      padding-right: 10px;
+      color: #f968d7;
+      font-size: 25px; }
+    header .menu nav ul li a:hover {
+      color: #f968d7; }
+  header .menu nav ul li:hover {
+    background-color: #a0d6c6; }
+    header .menu nav ul li:hover i {
+      color: #ffff9f; }
+    header .menu nav ul li:hover a:hover {
+      color: black; }
+
+header .carousel .img-fluid {
+  min-height: 250px;
+  max-height: 450px; }
+
+.articles {
+  background-color: #f968d7; }
+
+.category {
+  background-color: #ffff9f;
+  padding-top: 2%; }
+
+.single {
+  background-color: #e1daca;
+  padding-top: 2%; }
+
+.content {
+  background-color: #f7f2f6; }
+
+.etiquettes {
+  background-color: #ffff9f; }
+
+.info {
+  background-color: white;
+  padding-top: 30px; }
+
+.accueil {
+  background-color: white; }
+
+footer {
+  background-color: #f7f2f6;
+  font-family: 'Redoura';
+  padding-top: 20px; }
+  footer h1 {
+    font-family: 'PatuaOne-Regular';
+    margin-bottom: 30px; }
+  footer .avatar {
+    background-color: #a0d6c6;
+    border: 2px solid white; }

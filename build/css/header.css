@@ -1,0 +1,32 @@
+header h1 {
+  font-family: 'GrandHotel-Regular';
+  font-size: 50px;
+  color: #fff;
+  padding-top: 10px; }
+
+header .menu nav {
+  margin-top: 65px; }
+  header .menu nav ul li {
+    margin-left: 0px;
+    margin-right: 0px; }
+    header .menu nav ul li a {
+      font-family: 'PatuaOne-Regular';
+      color: #a0d6c6;
+      font-size: 20px;
+      margin-right: 13px; }
+    header .menu nav ul li i {
+      padding-right: 10px;
+      color: #f968d7;
+      font-size: 25px; }
+    header .menu nav ul li a:hover {
+      color: #f968d7; }
+  header .menu nav ul li:hover {
+    background-color: #a0d6c6; }
+    header .menu nav ul li:hover i {
+      color: #ffff9f; }
+    header .menu nav ul li:hover a:hover {
+      color: black; }
+
+header .carousel .img-fluid {
+  min-height: 250px;
+  max-height: 450px; }

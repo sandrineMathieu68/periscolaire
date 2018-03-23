@@ -1,1 +1,16 @@
 @import "color.scss";
+footer{
+	h1{
+	font-family: 'PatuaOne-Regular';
+	margin-bottom: 30px;
+	}
+	@include couleur(4,6);
+	font-family: 'Redoura';
+	padding-top: 20px;
+
+
+	.avatar{
+		@include couleur(1,6);
+		border: 2px solid white;
+	}
+}

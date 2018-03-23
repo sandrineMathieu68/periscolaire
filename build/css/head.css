@@ -1,5 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #529972;
-  color: #b7b6a7; }
+  background-color: white;
+  font-family: 'PlayfairDisplay-Regular';
+  background-image: url("../../img/bus3.svg");
+  background-repeat: no-repeat; }

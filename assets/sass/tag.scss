@@ -1,0 +1,6 @@
+@import "color.scss";
+
+.etiquettes{
+	@include couleur(3,5);
+
+}

@@ -1,5 +1,72 @@
 // ###########################
-// ######## Header ###########
+// ######## Head ###########
 // ###########################
 @import "color.scss";
 
+header{
+//@include couleur(1,4);
+
+	
+	h1{
+		font-family: 'GrandHotel-Regular';
+		font-size: 50px;
+		color: #fff;
+		padding-top: 10px;
+	}
+	.menu{
+		
+
+		nav{
+			//@include couleur(8,6);
+			margin-top: 65px;
+			.navbar-collapse{
+				//@include couleur(7,6);
+				
+
+			}
+						ul{
+				//@include couleur(8,6);
+				li{
+					margin-left: 0px;
+					margin-right: 0px;
+					//@include couleur(1,6);
+					//border: 2px solid #a6ef18;
+					a{
+						font-family: 'PatuaOne-Regular';
+						color: #a0d6c6;
+						font-size:20px;
+						margin-right: 13px;
+						
+
+					}
+					i{
+						
+						padding-right: 10px;
+						color: #f968d7;
+						font-size:25px;
+					}
+					a:hover{
+						color: #f968d7;
+					}
+				}
+				li:hover{
+					
+					@include couleur(1,6);
+					
+					i{
+						color: #ffff9f;
+					}
+					a:hover{
+						color: black;
+					}
+				}
+			}
+		}	
+	}
+	.carousel{
+.img-fluid{
+	min-height: 250px;
+	max-height: 450px;
+}
+}
+}

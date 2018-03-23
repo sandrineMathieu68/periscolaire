@@ -1,0 +1,5 @@
+@import "color.scss";
+.single{
+		@include couleur(2,6);
+	padding-top: 2%;
+}

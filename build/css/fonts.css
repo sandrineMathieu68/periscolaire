@@ -3,6 +3,18 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../../fonts/GrandHotel-Regular.ttf"); }
+
+@font-face {
+  font-family: 'HomemadeApple-Regular.ttf';
+  src: url("../../fonts/HomemadeApple-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url("../../fonts/Playball-Regular.ttf"); }
+
+@font-face {
   font-family: 'Pacifico-Regular';
   src: url("../../fonts/Pacifico-Regular.ttf"); }
 
@@ -25,3 +37,7 @@
 @font-face {
   font-family: 'KGArrows';
   src: url("../../fonts/KGArrows.ttf"); }
+
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
