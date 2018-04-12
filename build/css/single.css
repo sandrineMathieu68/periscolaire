@@ -1,3 +1,87 @@
 .single {
+  width: 100%;
   background-color: #e1daca;
-  padding-top: 2%; }
+  margin-top: 30px;
+  padding: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 30px; }
+  .single h1 {
+    font-family: 'PatuaOne-Regular';
+    padding-left: 100px; }
+    .single h1 i {
+      margin-left: 30px; }
+  .single .elementor-widget-container {
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    text-align: center; }
+    .single .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: yellow;
+      font-size: 30px; }
+    .single .elementor-widget-container p {
+      min-height: 160px;
+      font-family: 'Playball-Regular';
+      color: yellow; }
+  .single .test-2 .elementor-widget-container {
+    min-height: 196px;
+    max-width: 500px;
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    font-family: 'Playball-Regular';
+    text-align: center; }
+    .single .test-2 .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: yellow;
+      font-size: 30px; }
+    .single .test-2 .elementor-widget-container p {
+      min-height: 160px;
+      color: yellow; }
+  .single .autre-test {
+    background-color: grey; }
+    .single .autre-test .elementor-widget-container {
+      max-width: 100%; }
+      .single .autre-test .elementor-widget-container h2 {
+        font-family: 'PatuaOne-Regular';
+        color: blue;
+        font-size: 30px; }
+      .single .autre-test .elementor-widget-container p {
+        min-height: 160px;
+        color: yellow; }
+  .single .test-class-img .elementor-widget-container {
+    max-width: 100%;
+    background-color: yellow; }
+    .single .test-class-img .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: blue;
+      font-size: 30px; }
+    .single .test-class-img .elementor-widget-container p {
+      min-height: 160px;
+      color: yellow; }
+  .single .nouvelles .elementor-widget-container {
+    min-height: 260px;
+    max-width: 100%;
+    background-color: blue;
+    max-width: 100%; }
+    .single .nouvelles .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: blue;
+      font-size: 30px; }
+    .single .nouvelles .elementor-widget-container p {
+      min-height: 60px;
+      color: yellow; }
+  .single li {
+    font-family: 'PatuaOne-Regular';
+    background-color: #e1daca;
+    color: #e1daca;
+    font-size: 40px;
+    list-style: none;
+    color: red;
+    font-size: 35px; }
+    .single li a {
+      font-size: 25px;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-decoration: none;
+      color: orange; }

@@ -19,8 +19,8 @@ if($slider_query->have_posts()): ?>
 <!-------------------------------------------------->
 
 	<section>
-		<div class="container">
-			<div id="slider-01" class="carousel slide" data-ride="carousel">
+		<div class="container slide">
+			<div id="slider-01" class="carousel slide"><!-- class suprimé car modif via js :data-ride="carousel"-->
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<?php $indicator_index = 0;
@@ -57,8 +57,13 @@ if($slider_query->have_posts()): ?>
 							<div class="carousel-item<?php echo ($active_test ? " active" : ""); ?>">
 								<img class="d-block w-100" src="<?php echo $thumbnail_src; ?>" alt="<?php echo $alt_val; ?>">
 								<div class="carousel-caption d-none d-md-block">
-								  <h3><?php the_title(); ?></h3><!-- saison 3 episode 5 -->
-								  <p><?php the_field('sous_titre'); ?></p><!-- saison 3 episode 5 -->
+								  <h3 data-animation = "animated bounceInDown"><?php the_title(); ?></h3><!-- saison 3 episode 5 et - pour modifier l'animation , il suffit de modifier bounceInDown par le nom de l'animation souhaité-->
+
+<!-- pour modifier l'arrivée de lanimation, mettre dans css en ciblant ANIMATION DECALER
+.carousel-inner .carousel-item h3{ animation-delay : 0.4s; } saison 3 episode 6 à 30mn
+.carousel-inner .carousel-item p{ animation-delay : 1s; } saison 3 episode 6 à 30mn  -->
+
+								  <p data-animation = "animated bounceInDown"><?php the_field('sous_titre'); ?></p><!-- saison 3 episode 5 -->
 								</div>
 							</div>
 

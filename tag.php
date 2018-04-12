@@ -7,13 +7,6 @@
         <!-- saison 1 episode 11/13 à 8MN-->
 <!-- etiquette ajouter dans apparence du menu wp-->
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1><i class="fa fa-wpexplorer" aria-hidden="true"> Gestion par étiquettes tag.php et tag.scss</i></h1>
-    </div>
-  </div>
-</div>
  
 <section class="etiquettes"><!-- affichage des article saissi dans wordpress avec lien sur titre et img-->
   <div class="container ">
@@ -27,7 +20,7 @@
 
           <?php while (have_posts()): the_post(); ?>
 
-            <?php get_template_part('content'); ?>
+            <?php get_template_part('templates/content'); ?>
 
           <?php endwhile; ?>
 

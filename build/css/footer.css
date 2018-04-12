@@ -1,10 +1,13 @@
 footer {
-  background-color: #f7f2f6;
+  color: #545455;
+  background-color: #fff;
   font-family: 'Redoura';
   padding-top: 20px; }
   footer h1 {
     font-family: 'PatuaOne-Regular';
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 30px; }
   footer .avatar {
-    background-color: #a0d6c6;
-    border: 2px solid white; }
+    background-color: #fff;
+    border: 2px solid white;
+    padding: 5px; }

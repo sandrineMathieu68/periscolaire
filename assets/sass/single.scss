@@ -1,5 +1,138 @@
 @import "color.scss";
 .single{
-		@include couleur(2,6);
-	padding-top: 2%;
+		width: 100%;
+		@include couleur(2,7);
+		margin-top:30px;
+		padding: 50px;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		h1{
+			font-family: 'PatuaOne-Regular';
+			padding-left: 100px;
+			i{
+				margin-left: 30px;
+			}	
+		}
+
+		.elementor-widget-container {
+			 	//max-width: 500px;
+				color: white;
+				padding: 10px;
+				background-color: grey;
+				text-align: center;
+				h2{
+					font-family: 'PatuaOne-Regular';
+					color: yellow;
+					font-size: 30px;
+					
+				}
+				p{
+					min-height: 160px;
+					font-family: 'Playball-Regular';
+					color: yellow;		
+					}	
+			}		
+
+.test-2{
+		.elementor-widget-container {
+				min-height: 196px;
+			 	max-width: 500px;
+				color: white;
+				padding: 10px;
+				background-color: grey;
+				font-family: 'Playball-Regular';
+				text-align: center;
+				h2{
+					font-family: 'PatuaOne-Regular';
+					color: yellow;
+					font-size: 30px;	
+				}
+				p{
+					min-height: 160px;	
+					color: yellow;		
+				}
+				
+		}
+}
+
+
+.autre-test{
+		background-color: grey;
+		.elementor-widget-container {
+				max-width: 100%;
+				h2{
+					font-family: 'PatuaOne-Regular';
+					color: blue;
+					font-size: 30px;
+
+				}
+				p{
+					min-height: 160px;	
+					color: yellow;		
+					}
+			}
+
+
+}
+
+.test-class-img{
+		
+		.elementor-widget-container {
+				max-width: 100%;
+				background-color: yellow;
+
+				h2{
+
+					font-family: 'PatuaOne-Regular';
+					color: blue;
+					font-size: 30px;	
+				}
+				p{
+					min-height: 160px;	
+					color: yellow;		
+					}
+			}
+
+
+}
+.nouvelles{
+
+		.elementor-widget-container {
+				min-height: 260px;
+				max-width: 100%;
+				background-color: blue;
+				max-width: 100%;
+
+				h2{
+
+					font-family: 'PatuaOne-Regular';
+					color: blue;
+					font-size: 30px;	
+				}
+				p{
+					min-height: 60px;	
+					color: yellow;		
+					}
+			}
+
+
+}
+
+
+		li{
+			font-family: 'PatuaOne-Regular';
+			@include couleur(2,2);
+			font-size: 40px;
+			list-style: none;
+			color: red;
+
+			font-size: 	35px;
+			a{
+				font-size: 	25px;
+				margin-left: 30px;
+				margin-right: 30px;
+				text-decoration: none;
+				color: orange;
+			}
+		}
 }

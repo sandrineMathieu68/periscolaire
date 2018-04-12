@@ -1,11 +1,4 @@
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center">Appel du template content.php et content.scss</h1>
-    </div>
-  </div>
-</div>
 <!---------------------------------------------------->
 <!---- CONTENU APPELER DANS PLUSIEURS TEMPLATES  ----->
 <!---------------------------------------------------->
@@ -20,18 +13,18 @@
                 endif; ?>  
               </div>
               <div class="col-10">
-                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?><i class="fa fa-star-o" aria-hidden="true"></i></a></h1>
+                <h1><?php the_title(); ?><i class="fa fa-star-o" aria-hidden="true"></i></h1>
                 <p><!-- saison 1 episode 10/13 12MN -->
-                <?php echo lgmac_give_me_meta_01(
+                <?php /*echo lgmac_give_me_meta_01(
                                             esc_attr( get_the_date( 'c' ) ),
                                             esc_html( get_the_date()),
                                             get_the_category_list(', '),
                                             get_the_tag_list('', ', ')
-                                            ); ?>
+                                            ); */?>
                 </p>                            
       
 
                 <!-- affichage d'extrait d'article -->
-                <?php the_excerpt(); ?>                
+                <?php the_content(); ?>                
               </div>
             </div><!-- /row -->

@@ -1,0 +1,36 @@
+.taxo {
+  margin-top: 50px; }
+  .taxo .anniversaires {
+    background-color: #f7f2f6;
+    margin-bottom: 50px; }
+    .taxo .anniversaires h1 {
+      display: none; }
+    .taxo .anniversaires .reservation {
+      background-color: #b05679;
+      margin: 30px;
+      padding: 30px; }
+      .taxo .anniversaires .reservation h3 {
+        font-family: 'PatuaOne-Regular';
+        font-size: 30px;
+        color: #fff; }
+      .taxo .anniversaires .reservation .ligne {
+        color: #fff;
+        font-family: 'KGArrows';
+        font-size: 20px;
+        margin-bottom: 15px; }
+    .taxo .anniversaires .festive {
+      background-color: #B05679;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: 'PatuaOne-Regular';
+      color: #fff; }
+      .taxo .anniversaires .festive h3 {
+        font-size: 30px;
+        color: #fff;
+        margin: 20px; }
+      .taxo .anniversaires .festive p {
+        padding-top: 20px;
+        font-size: 20px; }
+        .taxo .anniversaires .festive p i {
+          font-size: 40px;
+          padding-right: 3%; }

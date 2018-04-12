@@ -4,15 +4,7 @@
 <!-------------------------------------------------->
 <!----------   gestion par catégorie  --_----------->
 <!-------------------------------------------------->
-        <!-- saison 1 episode 11/13 -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center"><i class="fa fa-wpexplorer" aria-hidden="true"></i> Affichage par catégorie category.scss</h1>
-    </div>
-  </div>
-</div>
+        
  
 <section><!-- affichage des article saissi dans wordpress avec lien sur titre et img-->
   <div class="container category">

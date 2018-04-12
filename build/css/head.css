@@ -3,5 +3,6 @@ body {
   padding: 0;
   background-color: white;
   font-family: 'PlayfairDisplay-Regular';
-  background-image: url("../../img/bus3.svg");
+  background-image: url("../../img/bus9.svg");
+  background-position: top center;
   background-repeat: no-repeat; }

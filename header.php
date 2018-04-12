@@ -38,20 +38,13 @@
     <!-- saison 1 episode 08/13 -->
     <!-- saison 7 episode 04/   -->
 
-  <header class="container-fluid  pt-1 pb-3 pr-4 pl-3">
-
+  <header class="container-fluid">
+    <div class="bus"></div>
     <div class="row">
-      <div class="col-3 ">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/admr.jpg" alt="" class="img-fluid float-left" width="60" height="60">
-      </div>
-      <div class="col-6 text-center nom">
-        <h1>Le coin des Mômes</h1>
-      </div>
-       <div class="col-3">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo1.svg" alt="" class="img-fluid float-right" width="90" height="90">
-      </div>       
-    </div>
+      <div id="fixed-header">      
     <div class="container-fluid menu">
+      <h1 class="float-right"><img src="<?php //echo get_template_directory_uri(); ?>/img/logo.jpg" alt="" class="img-fluid float-left" width="60" height="60"> Le coin des Mômes <img src="<?php//echo get_template_directory_uri(); ?>/img/logo1.svg" alt="" class="img-fluid float-right" width="90" height="90"></h1>
+      <p >03 84 23 22 97</p>
   <nav class="navbar navbar-expand-sm " data-toggle="affix">
     <div class="mx-auto d-sm-flex d-block flex-sm-nowrap respons">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,13 +110,15 @@
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'navbarsExample11',
-            'menu_class'        => 'nav navbar-nav ml-auto',
+            'menu_class'        => 'nav navbar-nav ml-auto text-uppercase',
             'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
             'walker'            => new WP_Bootstrap_Navwalker())
         );
 ?>
     </div>
 </nav>
+</div>
+</div>
 </div>
 
 

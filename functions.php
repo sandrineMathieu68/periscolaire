@@ -1,4 +1,7 @@
 <?php
+require_once('personnalisation-cpt/tarifs.php');
+require_once('personnalisation-cpt/horaires.php');
+require_once('personnalisation-cpt/partenaires.php');
 //======================================================
 //===   Chargement des styles/scripts Front End  =========
 //======================================================
@@ -7,7 +10,18 @@ define('LGMAC_VERSION', '1.0.1');
 function lgmac_scripts() {
 	// Chargement des styles
 	wp_enqueue_style( 'lgmac_bootstrap-core', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), LGMAC_VERSION, 'all');
-	wp_enqueue_style( 'lgmac_custom', get_template_directory_uri() . '/style.css', array('lgmac_bootstrap-core'), LGMAC_VERSION, 'all');
+
+// POUR FAIRE appel à la bibliotheque animate css seulement sur la page où il se trouve saison 3 dernière vidéo
+	if(is_front_page()) :
+	wp_enqueue_style( 'lgmac_animate', get_template_directory_uri() . '/assets/css/animate.css', array(), LGMAC_VERSION, 'all');
+	wp_enqueue_style( 'lgmac_custom', get_template_directory_uri() . '/style.css', array('lgmac_bootstrap-core', 'lgmac_animate'), LGMAC_VERSION, 'all');
+	else:
+	wp_enqueue_style( 'lgmac_custom', get_template_directory_uri() . '/style.css', array('lgmac_bootstrap-core'), LGMAC_VERSION, 'all');		
+
+	endif;	
+
+
+	
 
 	// Chargement des scripts
 	if(!is_admin()){
@@ -110,6 +124,26 @@ function lgmac_widgets_init(){
 }
 
 add_action('widgets_init', 'lgmac_widgets_init');
+
+//==========================================================================
+//=======     Mon propre widget    ===========// <!-- saison 2 episode 6 -->
+//==========================================================================
+     // <!-- saison 2 episode 6 -->
+function lgmac_widgets2_init(){
+	register_sidebar(array(
+		'name'     		  => 'Accueil Widget Zone',
+		'description'     => 'Widgets affichés dans le milieu de page: 4 au maximum',
+		'id'     		  => 'widgetized-milieu',
+		'before_widget'   => '<div id="%1$s" class="col-3 %2$s mywid"><div class="inside-widget">',// code html qui encadre chacun des widget
+		'after_widget'    => '</div></div>',
+		'before_title'    => '<h2 class="h3 text-center">',
+		'after_title'    => '</h2>'		
+
+	));
+
+}
+
+add_action('widgets_init', 'lgmac_widgets2_init');
 
 //======================================================
 //=======  ajout des icons // Font Awesome   ===========
@@ -245,7 +279,7 @@ add_action('init', 'lgmac_slider_init');
 
 
 //=============================================================================
-//==   ajout de l'image et ordre dans la colnne admin pour le slider  =========
+//==   ajout de l'image et ordre dans la colonne admin pour le slider  =========
 //=============================================================================
 // <!-- saison 3 episode 3 à 10 mn -->
 
@@ -301,5 +335,8 @@ function my_sortable_cake_column($columns) {
 
 	return $columns;
 }*/
-
+function ld_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'ld_custom_excerpt_length', 999 );
 

@@ -1,6 +1,7 @@
-.info {
-  background-color: white;
-  padding-top: 30px; }
-
 .accueil {
-  background-color: white; }
+  background-color: #ffff9f;
+  padding-top: 30px;
+  font-family: 'PatuaOne-Regular'; }
+  .accueil h1 {
+    font-size: 30px;
+    padding-bottom: 30px; }

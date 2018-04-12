@@ -1,12 +1,13 @@
 @import "color.scss";
 
-.info{
-	@include couleur(5,6);
-
-	padding-top: 30px;
-}
-
 .accueil{
-	@include couleur(5,6);
+	@include couleur(1,6);
+	padding-top: 30px;
+	font-family: 'PatuaOne-Regular';
+	h1{
+		font-size: 30px;
+		padding-bottom: 30px;
+	}
+	
 
 }

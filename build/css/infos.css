@@ -1,0 +1,18 @@
+.infos {
+  background-color: #f7f2f6;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-family: 'PatuaOne-Regular'; }
+  .infos .container h4 {
+    font-size: 30px; }
+  .infos .container .ligne {
+    color: #b05679;
+    font-family: 'KGArrows';
+    font-size: 20px; }
+  .infos .container h6 {
+    margin-top: 30px;
+    font-size: 20px; }
+    .infos .container h6 img {
+      margin-right: 15px; }

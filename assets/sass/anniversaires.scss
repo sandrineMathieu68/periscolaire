@@ -1,0 +1,58 @@
+@import "color.scss";
+.taxo{
+
+	margin-top: 50px;
+	.anniversaires{
+		@include couleur(4,6);
+		margin-bottom: 50px;
+		
+		h1{
+		display:none;
+		}
+
+
+		.reservation{
+			//@include couleur(7,6);
+			background-color: #b05679;
+			margin: 30px;
+			padding: 30px;
+
+			h3{
+				font-family: 'PatuaOne-Regular';
+				font-size: 30px;
+				color: #fff;
+			}
+			.titre{
+				
+			}
+			.ligne{
+				color:#fff;
+				font-family: 'KGArrows';
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+		}
+
+
+		.festive{
+				background-color: #B05679;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				font-family: 'PatuaOne-Regular';
+				color: #fff;
+				h3{
+				font-size: 30px;
+				color: #fff;
+				margin: 20px;
+				}
+				p{
+					padding-top: 20px;
+					font-size: 20px;
+					i{
+						font-size: 40px;
+						padding-right: 3%; 
+					}
+				}
+		}
+	}
+}	

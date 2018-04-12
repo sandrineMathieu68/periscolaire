@@ -1,63 +1,109 @@
-// ###########################
-// ######## Head ###########
-// ###########################
 @import "color.scss";
 
 header{
-//@include couleur(1,4);
+//@include couleur(4,4);
+margin-bottom:30px;
+padding-bottom:10px;
+	.bus{
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		width: 100%;
+		height: 250px;
+		//background-image: url('../../img/bus1.svg') ;
+    	//background-position: top center;
+ 		//background-repeat: no-repeat;
+	}
 
-	
+	#fixed-header{
+		position: sticky;
+		z-index: 99999;
+		width: 100%;
+		top: 0;
+		background: rgba(255, 255, 255, 0.45);
+	}
 	h1{
-		font-family: 'GrandHotel-Regular';
-		font-size: 50px;
+		transform:  rotate(4deg);  
+		background-color: #B4BDB3;
+		//font-family: 'GrandHotel-Regular';
+		font-family: 'PatuaOne-Regular';
+		font-size: 40px;
+		margin-right: 50px;
+		width: 37%;
 		color: #fff;
-		padding-top: 10px;
+		margin-top: 30px;
+		text-shadow: 2px 2px 2px #8d6e6e;
+		//letter-spacing: 5px;
+
+	}
+	p{
+		position: fixed;
+		 font-family: 'showg';
+		 margin-left: 19%;
+		font-size: 25px;
+		color: #4b5555;
+		margin-top: 35px;
 	}
 	.menu{
-		
 
+		text-align: center;
 		nav{
-			//@include couleur(8,6);
-			margin-top: 65px;
+			width: 100%;
+			padding-top: 125px;
 			.navbar-collapse{
 				//@include couleur(7,6);
-				
-
 			}
+			.respons
+				{
+					width: 100%;
+				}
 						ul{
-				//@include couleur(8,6);
+							width: 100%;
+							margin: auto;
+							//padding-bottom: 20px;
+				//@include couleur(4,6);
 				li{
-					margin-left: 0px;
-					margin-right: 0px;
+					margin-top: 200px;
+					background-color: #b4bdb3;
+					margin: auto;
+					width: 12%;
 					//@include couleur(1,6);
-					//border: 2px solid #a6ef18;
+					//border-top:1px dashed green;
+
 					a{
 						font-family: 'PatuaOne-Regular';
-						color: #a0d6c6;
-						font-size:20px;
-						margin-right: 13px;
-						
+						color:#fff;
+						font-size:16px;
+						//margin-right: 13px;
+						//text-shadow: 2px 2px 2px #768775;
+						.menu-item::before
+						{
+							content: '';
+							display: block;
+						}
 
 					}
 					i{
+						text-shadow: 1px 1px 1px #768775;
 						
-						padding-right: 10px;
-						color: #f968d7;
-						font-size:25px;
+						//padding-right: 10px;
+						color: #fff;
+						font-size:30px;
 					}
 					a:hover{
-						color: #f968d7;
+						background-color: #F7FCA9;
+						color: white;
 					}
 				}
 				li:hover{
 					
-					@include couleur(1,6);
+					@include couleur(5,6);
 					
 					i{
-						color: #ffff9f;
+						color: #ea8380;
 					}
 					a:hover{
-						color: black;
+						color: #ea8380;
 					}
 				}
 			}
