@@ -6,10 +6,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function(){
     gulp.src('./assets/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-        	browsers: ['last 2 versions'],
-        	cascade: false
-        }))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./build/css'));
 });
 

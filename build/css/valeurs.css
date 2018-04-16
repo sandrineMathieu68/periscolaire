@@ -1,0 +1,15 @@
+.valeurs {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .valeurs .cadre {
+    font-family: 'PatuaOne-Regular';
+    width: 200;
+    height: 140;
+    color: #4b5555; }
+    .valeurs .cadre h5 {
+      font-size: 22px; }
+      .valeurs .cadre h5 span {
+        color: #EA8380;
+        font-size: 35px; }
+    .valeurs .cadre p {
+      font-size: 18px; }

@@ -49,9 +49,63 @@ jQuery(document).ready(function($) {
 
 }); // fin du ready
 
+/* **************************************************** */
+/*          Gestion second titre avec Romain            */
+/* **************************************************** */
+/*var a = 0;
+ $(function(){
+   $(window).scroll(function () {//Au scroll dans la fenetre on déclenche la fonction
+      if ($(this).scrollTop() > 314) { //si on a défilé de plus de 160px du haut vers le bas
+        a++;
+        if(a == 1){
+          alert("hello");
+        }
+
+      } else {
+        a++;
+        if(a == 2){
+          console.log('r');
+          a = 0;
+          
+        }
+      $('header').removeClass("fixe");//sinon on retire la classe "fixe" (c'est pour laisser le header à son endroit de départ lors de la remontée
+      }
+   });
+ });*/
 
 
-//$('#yourElement').addClass('animated bounceOutLeft');
+ $(document).ready(function( $ ) {
+  $('#entete').hide();
+
+  $(function(){
+    $(window).scroll(function(){
+
+      if ($(this).scrollTop() > 150) {
+        $('#entete').fadeIn();
+         $('#entete').css('background-color', '#fff');
+          $('li').css('background-color', '#ea8380');
+        //$('li').css('border-radius', '50%');
+        //$('ul').css('margin', '15px');
+        //$('ul').css('margin-top', '50px');
+        //$('ul').css('background-color', '#B4BDB3');
+        $('a').css('color', '#3b3a39');
+      }else{
+
+        $('#entete').fadeOut();
+        $('li').css('background-color', '#B4BDB3');
+        //$('li').css('background-color', '#b4bdb3');
+        //$('a').css('color', '#fff');
+        //$('li').css('border-radius', '0%');
+        
+        //$('ul').css('margin', '0px');
+      }
+
+    });
+
+  });
+
+});
+
 
 
 

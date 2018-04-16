@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<?php //get_template_part('slider','home') ?><!-- appel du fichier carousel à personnalisé-->
+<?php get_template_part('slider','home') ?><!-- appel du fichier carousel à personnalisé-->
+
 
 <!-- -------------------------------------------------- -->
 <!-- --------  TEST gestion par catégorie  ------------ -->
@@ -26,35 +27,42 @@
 </section>
 
 
-<!-- --------------------------------------------------------------- -->
-<!-- ------             INFORMATIONS GÉNÉRALES             --------- -->
-<!-- --------------------------------------------------------------- -->
-<div class="container-fluid infos ">
-  <div class="container">
-    <h4 class="text-center">Informations pratique</h4>
-    <p class="ligne text-center">Informations pratique</p>
+ 
+<!-- -------------------------------------------------- -->
+<!-- --------   Les valeurs et pédagogie   ------------ -->
+<!-- -------------------------------------------------- --> 
+<div class="container valeurs">
   <div class="row">
-    <div class="col-4 text-center">
-      <h6 ><img src="<?php echo get_template_directory_uri(); ?>/img/horaire1.svg" alt="" class="img-fluid " width="40" >Horaire d'accueil</h6>
-      <p class="ligne text-center">tique</p>
-      <p class="float-right">Lundi, Mardi, Jeudi et Vendredi :<br /> 7H30 à 8H30, 11H30 à 13H30, 16H30 à 18H30</p>
-      <p class="text-center">MERCREDI: 7H30 à 18H30</p>
+
+    <div class="col-4 cadre" >
+      <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/tt.jpg" alt="" class="img-fluid"" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Nos valeurs<br /><span>-------- </span></h5>
+          
+          <p class="card-text text-center">Leur  sécurité,  y  compris  pendant  leur  éventuel  transport  si  le  restaurant  est  hors  de l’école, en les prenant en charge depuis la sortie des classes en fin de matinée jusqu’à l’entrée en classe en début d’après-midi. </p>    
+        </div>
     </div>
-    <div class="col-4 text-center">
-      <h6 ><img src="<?php echo get_template_directory_uri(); ?>/img/phone.svg" alt="" class="img-fluid" width="40" >Nous joindre</h6>
-      <p class="ligne text-center">tique</p>
-      <p>Par téléphone de 7H30 à 18H30 au :<br />03 84 23 22 97 </p>
-      <p class="text-center ligne">Pvb</p>
+
+    <div class="col-4 cadre" >
+      <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/mm.jpg" alt="" class="img-fluid"" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Pédagogie<br /><span>-------- </span></h5>
+          <p class="card-text text-center">Leur  sécurité,  y  compris  pendant  leur  éventuel  transport  si  le  restaurant  est  hors  de l’école, en les prenant en charge depuis la sortie des classes en fin de matinée jusqu’à l’entrée en classe en début d’après-midi. .</p>    
+        </div>
     </div>
-    <div class="col-4 text-center">
-      <h6  ><img src="<?php echo get_template_directory_uri(); ?>/img/run.svg" alt="" class="img-fluid " width="40">Nous rencontrer</h6>
-      <p class="ligne text-center">tique</p>
-      <p class="text-center">ACCEM</p>
-      <p>7 rue des Frères Renaud<br />70290 CHAMPAGNEY</p>
-    </div>        
+
+    <div class="col-4 cadre" >
+      <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/peinture.jpg" alt="" class="img-fluid"" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Sécurité<br /><span>-------- </span></h5>
+          <p class="card-text text-center">Leur  sécurité,  y  compris  pendant  leur  éventuel  transport  si  le  restaurant  est  hors  de l’école, en les prenant en charge depuis la sortie des classes en fin de matinée jusqu’à l’entrée en classe en début d’après-midi. </p>    
+        </div>
+    </div>
+
+
   </div>
 </div>
-</div>
+
 
 <!-- --------------------------------------------------------------- -->
 <!-- ------            ACTIVITÉ ET SERVICE ADMR            --------- -->
@@ -79,130 +87,220 @@
       </div>
     </div>
 
-</div> 
-
-
-
-
-
-
-<!-- --------------------------------------------------------------- -->
-<!-- ------    PRÉSENTATION TOUS SERVICE ET ACTIVITES      --------- -->
-<!-- --------------------------------------------------------------- -->
-
-
-
-
-              <!-- --------------------------------------------------------------- -->
-              <!-- ------ Création de ma propre boucle du pluging bidule --------- -->
-              <!-- --------------------------------------------------------------- -->
-
-          <div class="container-fluid all-services">
-
-          <?php
-          $args_vacances_front = array(
-            'post_type' => 'lgmac_vacances',
-            'posts_per_page' => 4, // l'ordre par défaut est descendant
-            'orderby' =>'rand' // classé arbitrairement
-            );
-          $req_vacances_front= new WP_Query($args_vacances_front);
-
-
-          if ($req_vacances_front->have_posts()): ?>
-            <section class="media-front">
-              <div class="container ">
-                <h1>APPEL d'UN CONTENU DE CUSTOM POST TYPE EN STYLE AVEC CLASS all-services</h1>
-                <div class="row">
-                  <?php while($req_vacances_front->have_posts() ): $req_vacances_front->the_post(); ?>
-
-                    <article class="col-3">
-                      <div class="card">
-
-                        <?php the_post_thumbnail('medium-large', array('class' => 'img-fluid')); ?>              
-                        <div class="card-footer">
-                          <h1 class="h4 text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                        </div>
-                      </div>
-                      
-                    </article>
-
-                  <?php endwhile; wp_reset_postdata(); ?>  
-                </div>
-              </div>
-              
-            </section>
-          <?php endif; ?>
-        </div>
-
-
-
-              <!-- --------------------------- -->
-              <!-- ----  Suite affichage ----- -->
-              <!-- --------------------------- -->
-
-                        <div class="container-fluid all-services">
-
-          <?php
-          $args_vacances_front = array(
-            'post_type' => 'lgmac_anniversaires',
-            'posts_per_page' => 3, // l'ordre par défaut est descendant
-            'orderby' =>'rand' // classé arbitrairement
-            );
-          $req_vacances_front= new WP_Query($args_vacances_front);
-
-
-          if ($req_vacances_front->have_posts()): ?>
-            <section class="media-front">
-              <div class="container ">
-                <h1>APPEL d'UN CONTENU DE CUSTOM POST TYPE EN STYLE AVEC CLASS all-services</h1>
-                <div class="row">
-                  <?php while($req_vacances_front->have_posts() ): $req_vacances_front->the_post(); ?>
-
-                    <article class="col-4">
-                      <div class="card">
-
-                        <?php the_post_thumbnail('medium-large', array('class' => 'img-fluid')); ?>              
-                        <div class="card-footer">
-                          <h1 class="h4 text-center"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h1></a>
-                        </div>
-                      </div>
-                      
-                    </article>
-
-                  <?php endwhile; wp_reset_postdata(); ?>  
-                </div>
-              </div>
-              
-            </section>
-          <?php endif; ?>
-        </div>
-
-
-
-<div class="container">
-                <div class="row">
-
-                <div class="col-3 text-center">
-                  <h6 >contenu à definir</h6>
-                  <p ><img src="<?php echo get_template_directory_uri(); ?>/img/forme.jpg" alt="" class="img-fluid " width="100" height="100"></p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-3 text-center">
-                  <h6 >contenu à definir</h6>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/forme1.jpg" alt="" class="img-fluid " width="100" height="100">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-3 text-center">
-                  <h6 >contenu à definir</h6>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/forme.jpg" alt="" class="img-fluid " width="100" height="100">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-3 text-center">
-                  <h6 >contenu à definir</h6>
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/forme1.jpg" alt="" class="img-fluid " width="100" height="100">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>                
-              </div>
 </div>
+
+
+<!-- --------------------------------------------------------------- -->
+<!-- ------                EQUIPE D'ANIMATION              --------- -->
+<!-- --------------------------------------------------------------- -->
+<div class="container-fluid ttequipe">
+  <div class="container equipes">
+    <div class="row">
+      <div class="col-4 titre text-center">
+        <h2>L'ÉQUIPE <br />D'ANIMATION</h2>
+      </div>
+      <div class="col-8 competences">
+        <p class="text-center">Vos enfants sont encadrés par des professionnels recrutés pour leurs compétences et leurs qualités relationnelles. L’écoute  de  leurs  besoins  et  souhaits, en  leur  donnant  la  possibilité  de  s’exprimer librement. Leur éducation alimentaire, en proposant l’éveil du goût. Le respect des règles de vie du centre (élaborer avec les enfants en début d’année)</p>
+      </div>
+        <div class="row personnel">
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" > </p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus">  
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>  
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>  
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>
+      <div class="col-3 col-sm-2 col-lg-1 bus"> 
+        <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+        <p class="text-center">Prénom</p>
+      </div>                       
+    </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container equipe ">
+  <h1 class="text-center">L'équipe d'animation</h1>
+  <p class="text-center">Vos enfants sont encadrés par des professionnels recrutés pour leurs compétences et leurs qualités relationnelles. L’écoute  de  leurs  besoins  et  souhaits, en  leur  donnant  la  possibilité  de  s’exprimer librement. Leur éducation alimentaire, en proposant l’éveil du goût. Le respect des règles de vie du centre (élaborer avec les enfants en début d’année)</p>
+  <div class="row">
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" > </p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus">  
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>  
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>  
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid " ></p>
+      <p class="text-center">Prénom</p>
+    </div>                       
+  </div>
+</div>--> 
+
+
+
+
+
+<!-- --------------------------------------------------------------- -->
+<!-- ------             INFORMATIONS GÉNÉRALES             --------- -->
+<!-- --------------------------------------------------------------- -->
+<!--<div class="container-fluid infos ">
+  <div class="container">
+    <h4 class="text-center">Informations pratique</h4>
+  <div class="container deco ">
+  <div class="row">
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" width="30" height="30"> </p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus">  
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>  
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>  
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete1.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>
+    <div class="col-3 col-sm-2 col-lg-1 bus"> 
+      <p class="avatar"><img src="<?php echo get_template_directory_uri(); ?>/img/tete2.svg" alt="" class=" img-fluid" width="30" height="30" ></p>
+      
+    </div>                       
+  </div>
+</div> 
+  <div class="row">
+    <div class="col-4 text-center">
+      <h6 ><img src="<?php echo get_template_directory_uri(); ?>/img/reveil.svg" alt="" class="img-fluid " width="40" >Horaire d'accueil</h6>
+      
+      <p class="float-right">Lundi, Mardi, Jeudi et Vendredi :<br /> 7H30 à 8H30, 11H30 à 13H30, 16H30 à 18H30</p>
+      <p class="mercredi">MERCREDI et VACANCES: 7H30 à 18H30</p>
+    </div>
+    <div class="col-4 text-center">
+      <h6 ><img src="<?php echo get_template_directory_uri(); ?>/img/phone1.svg" alt="" class="img-fluid" width="40" >Nous joindre</h6>
+      
+      <p>Par téléphone de 7H30 à 18H30 au :<br />03 84 23 22 97 </p>
+      <p class="ligne text-center">tique</p>
+      
+    </div>
+    <div class="col-4 text-center">
+      <h6  ><img src="<?php echo get_template_directory_uri(); ?>/img/run1.svg" alt="" class="img-fluid " width="40">Nous rencontrer</h6>
+      
+      <p class="text-center">ACCEM<br />7 rue des Frères Renaud<br />70290 CHAMPAGNEY</p>
+    </div>        
+  </div>
+</div>
+</div>-->
+
+
+
+
+
+
+
+
 
 <?php get_footer(); ?>

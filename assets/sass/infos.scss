@@ -1,20 +1,31 @@
 @import "color.scss";
 .infos{
-	@include couleur(4,6);
-	margin-top: 30px;
-	padding-top: 30px;
+	//@include couleur(4,6);
+	background-color: #fff;
+	color: #4b5555;
+	margin-top: 20px;
+	padding-top: 10px;
 	margin-bottom: 30px;
 	padding-bottom: 30px;
 	font-family: 'PatuaOne-Regular';
 
 .container{
+@include couleur(4,6);
+padding-bottom: 20px;
 	h4{
+		padding-top: 20px;
 		font-size: 30px;
 	}
 	.ligne{
-		color:#b05679;
-		font-family: 'KGArrows';
-		font-size: 20px;
+		color: #ea8380;
+		text-shadow:  2px 2px  2px black;;
+		//font-family: 'KGArrows';
+		font-family: 'dess';
+		font-size: 30px;
+	}
+	.mercredi{
+		color: #ea8380;
+		margin-left: 35px;
 	}
 	h6{
 		margin-top: 30px;
@@ -26,5 +37,25 @@
 		}
 		
 	}
+
 }
+
+.deco{
+	//position: fixed;
+	//bottom: 0;
+
+	color: #545455;
+	margin-top: 10px;
+	
+	font-family: 'Redoura';
+	
+
+
+	.avatar{
+		
+		border: 2px solid #EA8380;
+		width: 50%;
+	}
+}
+
 }

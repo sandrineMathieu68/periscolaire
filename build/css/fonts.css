@@ -3,6 +3,14 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
   font-family: 'GrandHotel-Regular';
   src: url("../../fonts/GrandHotel-Regular.ttf"); }
 

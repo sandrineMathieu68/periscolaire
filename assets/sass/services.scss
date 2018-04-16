@@ -6,9 +6,11 @@
 	.pedagogie{	
 		font-family: 'PlayfairDisplay-Regular';
 		font-size: 18px;
-		background-image: url('../../img/fam2.jpg') ;
+		background-image: url('../../img/fam1.jpg') ;
     	background-repeat: no-repeat;
     	color: white;
+    	margin-bottom: 20px;
+    	
     	.haut{
 			margin-top: 80px;
 			margin-left: 50px;
@@ -24,6 +26,7 @@
     		margin-top: 80px;
     		font-size: 28px;
     		margin-left: 50px;
+    		color: #B4BDB3;
     		img{
     			padding-right: 30px;
     		}

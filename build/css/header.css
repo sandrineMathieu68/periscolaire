@@ -1,72 +1,83 @@
 header {
+  background: rgba(255, 255, 255, 0.45);
+  height: 180px;
   margin-bottom: 30px;
   padding-bottom: 10px; }
-  header .bus {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 250px; }
-  header #fixed-header {
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 99999;
-    width: 100%;
-    top: 0;
-    background: rgba(255, 255, 255, 0.45); }
   header h1 {
     -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+            transform: rotate(4deg);
     background-color: #B4BDB3;
     font-family: 'PatuaOne-Regular';
     font-size: 40px;
     margin-right: 50px;
+    padding-left: 70px;
     width: 37%;
     color: #fff;
     margin-top: 30px;
     text-shadow: 2px 2px 2px #8d6e6e; }
   header p {
-    position: fixed;
+    position: absolute;
+    padding-left: 255px;
     font-family: 'showg';
-    margin-left: 19%;
+    margin-right: 40px;
     font-size: 25px;
     color: #4b5555;
-    margin-top: 35px; }
-  header .menu {
-    text-align: center; }
-    header .menu nav {
-      width: 100%;
-      padding-top: 125px; }
-      header .menu nav .respons {
+    margin-top: 32px; }
+  header img {
+    position: absolute;
+    margin-left: 682px; }
+  header .carousel .img-fluid {
+    min-height: 250px;
+    max-height: 450px; }
+
+.menu {
+  padding-right: 0px;
+  padding-left: 0px;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  text-align: center; }
+  .menu #entete {
+    padding: 10px;
+    width: 100%;
+    background-color: #F7FCA9;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'showg';
+    font-size: 25px;
+    color: #4b5555; }
+  .menu #fixed-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); }
+    .menu #fixed-header nav {
+      width: 100%; }
+      .menu #fixed-header nav .respons {
         width: 100%; }
-      header .menu nav ul {
+      .menu #fixed-header nav ul {
         width: 100%;
         margin: auto; }
-        header .menu nav ul li {
+        .menu #fixed-header nav ul li {
           margin-top: 200px;
           background-color: #b4bdb3;
           margin: auto;
           width: 12%; }
-          header .menu nav ul li a {
+          .menu #fixed-header nav ul li a {
             font-family: 'PatuaOne-Regular';
             color: #fff;
             font-size: 16px; }
-            header .menu nav ul li a .menu-item::before {
+            .menu #fixed-header nav ul li a .menu-item::before {
               content: '';
               display: block; }
-          header .menu nav ul li i {
+          .menu #fixed-header nav ul li i {
             text-shadow: 1px 1px 1px #768775;
             color: #fff;
             font-size: 30px; }
-          header .menu nav ul li a:hover {
+          .menu #fixed-header nav ul li a:hover {
             background-color: #F7FCA9;
             color: white; }
-        header .menu nav ul li:hover {
+        .menu #fixed-header nav ul li:hover {
           background-color: white; }
-          header .menu nav ul li:hover i {
-            color: #ea8380; }
-          header .menu nav ul li:hover a:hover {
-            color: #ea8380; }
-  header .carousel .img-fluid {
-    min-height: 250px;
-    max-height: 450px; }
+          .menu #fixed-header nav ul li:hover i {
+            color: #e65722; }
+          .menu #fixed-header nav ul li:hover a:hover {
+            color: #e65722; }

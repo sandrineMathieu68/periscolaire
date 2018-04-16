@@ -3,9 +3,10 @@
   .services .pedagogie {
     font-family: 'PlayfairDisplay-Regular';
     font-size: 18px;
-    background-image: url("../../img/fam2.jpg");
+    background-image: url("../../img/fam1.jpg");
     background-repeat: no-repeat;
-    color: white; }
+    color: white;
+    margin-bottom: 20px; }
     .services .pedagogie .haut {
       margin-top: 80px;
       margin-left: 50px;
@@ -17,11 +18,12 @@
       font-family: 'PatuaOne-Regular';
       margin-top: 80px;
       font-size: 28px;
-      margin-left: 50px; }
+      margin-left: 50px;
+      color: #B4BDB3; }
       .services .pedagogie h3 img {
         padding-right: 30px; }
   .services .prestations {
-    background-color: #b7b6a7;
+    background-color: #B4BDB3;
     font-family: 'PlayfairDisplay-Regular';
     color: white;
     padding: 50px; }

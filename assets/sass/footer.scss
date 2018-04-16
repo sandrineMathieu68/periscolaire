@@ -1,23 +1,23 @@
 @import "color.scss";
 footer{
-	//position: fixed;
-	//bottom: 0;
-
-	color: #545455;
-	background-color: #fff;
-	h1{
+	color: #4b5555;
+	background-color: #EA8380;
 	font-family: 'PatuaOne-Regular';
-	margin-bottom: 30px;
-	font-size: 30px;
+	margin-top:50px;
+	padding-top: 12px;
+	a{
+	color:#fff;
 	}
 	
-	font-family: 'Redoura';
-	padding-top: 20px;
+		p{
+			font-size: 16px;
+			.fa{
+				color: white;
+				font-size: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	
 
-
-	.avatar{
-		background-color: #fff;
-		border: 2px solid white;
-		padding: 5px;
-	}
 }

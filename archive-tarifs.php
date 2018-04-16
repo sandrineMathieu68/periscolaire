@@ -13,7 +13,7 @@
 
           ?>
 
-          <?php get_template_part('templates/'); ?><!-- saison 1 episode 11/13 -->
+          <?php get_template_part('templates/content'); ?><!-- saison 1 episode 11/13 -->
 
           <?php endwhile; ?>
 

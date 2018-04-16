@@ -3,6 +3,14 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
   font-family: 'GrandHotel-Regular';
   src: url("../../fonts/GrandHotel-Regular.ttf"); }
 
@@ -53,107 +61,141 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
   font-family: 'PlayfairDisplay-Regular';
   background-image: url("../../img/bus9.svg");
   background-position: top center;
   background-repeat: no-repeat; }
 
 header {
+  background: rgba(255, 255, 255, 0.45);
+  height: 180px;
   margin-bottom: 30px;
   padding-bottom: 10px; }
-  header .bus {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 250px; }
-  header #fixed-header {
-    position: -webkit-sticky;
-    position: sticky;
-    z-index: 99999;
-    width: 100%;
-    top: 0;
-    background: rgba(255, 255, 255, 0.45); }
   header h1 {
     -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+            transform: rotate(4deg);
     background-color: #B4BDB3;
     font-family: 'PatuaOne-Regular';
     font-size: 40px;
     margin-right: 50px;
+    padding-left: 70px;
     width: 37%;
     color: #fff;
     margin-top: 30px;
     text-shadow: 2px 2px 2px #8d6e6e; }
   header p {
-    position: fixed;
+    position: absolute;
+    padding-left: 255px;
     font-family: 'showg';
-    margin-left: 19%;
+    margin-right: 40px;
     font-size: 25px;
     color: #4b5555;
-    margin-top: 35px; }
-  header .menu {
-    text-align: center; }
-    header .menu nav {
-      width: 100%;
-      padding-top: 125px; }
-      header .menu nav .respons {
-        width: 100%; }
-      header .menu nav ul {
-        width: 100%;
-        margin: auto; }
-        header .menu nav ul li {
-          margin-top: 200px;
-          background-color: #b4bdb3;
-          margin: auto;
-          width: 12%; }
-          header .menu nav ul li a {
-            font-family: 'PatuaOne-Regular';
-            color: #fff;
-            font-size: 16px; }
-            header .menu nav ul li a .menu-item::before {
-              content: '';
-              display: block; }
-          header .menu nav ul li i {
-            text-shadow: 1px 1px 1px #768775;
-            color: #fff;
-            font-size: 30px; }
-          header .menu nav ul li a:hover {
-            background-color: #F7FCA9;
-            color: white; }
-        header .menu nav ul li:hover {
-          background-color: white; }
-          header .menu nav ul li:hover i {
-            color: #ea8380; }
-          header .menu nav ul li:hover a:hover {
-            color: #ea8380; }
+    margin-top: 32px; }
+  header img {
+    position: absolute;
+    margin-left: 682px; }
   header .carousel .img-fluid {
     min-height: 250px;
     max-height: 450px; }
 
+.menu {
+  padding-right: 0px;
+  padding-left: 0px;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  text-align: center; }
+  .menu #entete {
+    padding: 10px;
+    width: 100%;
+    background-color: #F7FCA9;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'showg';
+    font-size: 25px;
+    color: #4b5555; }
+  .menu #fixed-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); }
+    .menu #fixed-header nav {
+      width: 100%; }
+      .menu #fixed-header nav .respons {
+        width: 100%; }
+      .menu #fixed-header nav ul {
+        width: 100%;
+        margin: auto; }
+        .menu #fixed-header nav ul li {
+          margin-top: 200px;
+          background-color: #b4bdb3;
+          margin: auto;
+          width: 12%; }
+          .menu #fixed-header nav ul li a {
+            font-family: 'PatuaOne-Regular';
+            color: #fff;
+            font-size: 16px; }
+            .menu #fixed-header nav ul li a .menu-item::before {
+              content: '';
+              display: block; }
+          .menu #fixed-header nav ul li i {
+            text-shadow: 1px 1px 1px #768775;
+            color: #fff;
+            font-size: 30px; }
+          .menu #fixed-header nav ul li a:hover {
+            background-color: #F7FCA9;
+            color: white; }
+        .menu #fixed-header nav ul li:hover {
+          background-color: white; }
+          .menu #fixed-header nav ul li:hover i {
+            color: #e65722; }
+          .menu #fixed-header nav ul li:hover a:hover {
+            color: #e65722; }
+
 .infos {
-  background-color: #f7f2f6;
-  margin-top: 30px;
-  padding-top: 30px;
+  background-color: #fff;
+  color: #4b5555;
+  margin-top: 20px;
+  padding-top: 10px;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-family: 'PatuaOne-Regular'; }
-  .infos .container h4 {
-    font-size: 30px; }
-  .infos .container .ligne {
-    color: #b05679;
-    font-family: 'KGArrows';
-    font-size: 20px; }
-  .infos .container h6 {
-    margin-top: 30px;
-    font-size: 20px; }
-    .infos .container h6 img {
-      margin-right: 15px; }
+  .infos .container {
+    background-color: #f7f2f6;
+    padding-bottom: 20px; }
+    .infos .container h4 {
+      padding-top: 20px;
+      font-size: 30px; }
+    .infos .container .ligne {
+      color: #ea8380;
+      text-shadow: 2px 2px  2px black;
+      font-family: 'dess';
+      font-size: 30px; }
+    .infos .container .mercredi {
+      color: #ea8380;
+      margin-left: 35px; }
+    .infos .container h6 {
+      margin-top: 30px;
+      font-size: 20px; }
+      .infos .container h6 img {
+        margin-right: 15px; }
+  .infos .deco {
+    color: #545455;
+    margin-top: 10px;
+    font-family: 'Redoura'; }
+    .infos .deco .avatar {
+      border: 2px solid #EA8380;
+      width: 50%; }
 
 @font-face {
   font-family: 'Courgette-Regular';
   src: url("../../fonts/Courgette-Regular.ttf"); }
+
+@font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
 
 @font-face {
   font-family: 'GrandHotel-Regular';
@@ -204,50 +246,116 @@ header {
   src: url("../../fonts/showg.ttf"); }
 
 .sections {
-  margin-top: 30px; }
+  margin-top: 40px; }
   .sections h1 {
     font-family: 'PatuaOne-Regular';
     margin-top: 30px;
     font-size: 30px;
     color: #4b5555; }
   .sections .content {
-    width: 100%;
     background-image: url("../../img/v.svg");
     background-position: top center;
     background-repeat: no-repeat;
     font-family: 'PatuaOne-Regular'; }
     .sections .content .petits {
-      margin: 30px;
-      padding: 20px;
-      background-color: #F7FCA9;
+      margin: 15px;
+      padding: 15px;
+      background-color: #EA8380;
       margin-bottom: 30px;
       font-size: 18px;
       color: #4b5555; }
       .sections .content .petits .info {
-        background-color: grey; }
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
       .sections .content .petits h2 {
-        font-size: 25px; }
+        font-size: 25px;
+        margin-bottom: 15px; }
     .sections .content .grands {
-      margin: 10px;
-      padding: 20px;
+      margin: 15px;
+      padding: 15px;
       background-color: #F7FCA9;
       margin-bottom: 30px;
       font-size: 18px;
       color: #4b5555; }
+      .sections .content .grands .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
       .sections .content .grands h2 {
-        font-size: 25px; }
+        font-size: 25px;
+        margin-bottom: 15px; }
 
-.slide .carousel-inner .carousel-item h3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-  color: #fa4b08;
-  font-size: 30px; }
+.valeurs {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .valeurs .cadre {
+    font-family: 'PatuaOne-Regular';
+    width: 200;
+    height: 140;
+    color: #4b5555; }
+    .valeurs .cadre h5 {
+      font-size: 22px; }
+      .valeurs .cadre h5 span {
+        color: #EA8380;
+        font-size: 35px; }
+    .valeurs .cadre p {
+      font-size: 18px; }
 
-.slide .carousel-inner .carousel-item p {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  color: #fa4b08;
-  font-size: 20px; }
+.equipe {
+  font-family: 'PatuaOne-Regular';
+  background-color: #fff;
+  padding-top: 20px; }
+  .equipe h1 {
+    margin-bottom: 30px;
+    font-size: 30px; }
+  .equipe .avatar {
+    background-color: #fff;
+    border: 2px solid white;
+    padding: 5px; }
+
+.ttequipe {
+  background-color: #fff; }
+  .ttequipe .equipes {
+    background-color: #f7f2f6;
+    font-family: 'PatuaOne-Regular';
+    margin-top: 60px;
+    padding: 30px; }
+    .ttequipe .equipes .row {
+      margin: 0px; }
+      .ttequipe .equipes .row .titre {
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        background-color: #b4bdb3; }
+        .ttequipe .equipes .row .titre h2 {
+          font-size: 30px;
+          color: #4b5555; }
+      .ttequipe .equipes .row .competences {
+        padding: 15px;
+        background-color: #EA8380; }
+        .ttequipe .equipes .row .competences p {
+          font-size: 18px;
+          color: #fff; }
+      .ttequipe .equipes .row .personnel {
+        margin-top: 20px;
+        color: #4b5555; }
+
+.slide {
+  margin-top: 20px; }
+  .slide .carousel-inner .carousel-item h3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    color: #fa4b08;
+    font-size: 30px; }
+  .slide .carousel-inner .carousel-item p {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    color: #fa4b08;
+    font-size: 20px; }
 
 .taxo {
   margin-top: 50px; }
@@ -295,9 +403,10 @@ header {
   .services .pedagogie {
     font-family: 'PlayfairDisplay-Regular';
     font-size: 18px;
-    background-image: url("../../img/fam2.jpg");
+    background-image: url("../../img/fam1.jpg");
     background-repeat: no-repeat;
-    color: white; }
+    color: white;
+    margin-bottom: 20px; }
     .services .pedagogie .haut {
       margin-top: 80px;
       margin-left: 50px;
@@ -309,11 +418,12 @@ header {
       font-family: 'PatuaOne-Regular';
       margin-top: 80px;
       font-size: 28px;
-      margin-left: 50px; }
+      margin-left: 50px;
+      color: #B4BDB3; }
       .services .pedagogie h3 img {
         padding-right: 30px; }
   .services .prestations {
-    background-color: #b7b6a7;
+    background-color: #B4BDB3;
     font-family: 'PlayfairDisplay-Regular';
     color: white;
     padding: 50px; }
@@ -327,6 +437,12 @@ header {
         font-size: 30px;
         margin-right: 10px; }
 
+.partenaires {
+  background-color: #FFF;
+  padding: 5px; }
+  .partenaires .divers p {
+    margin-bottom: 0; }
+
 .all-services {
   background-color: #f7f2f6;
   margin-top: 30px;
@@ -339,7 +455,7 @@ header {
       margin-bottom: 0px; }
 
 .articles {
-  background-color: #b7b6a7; }
+  background-color: #B4BDB3; }
 
 .category {
   background-color: #ffff9f;
@@ -448,15 +564,17 @@ header {
     padding-bottom: 30px; }
 
 footer {
-  color: #545455;
-  background-color: #fff;
-  font-family: 'Redoura';
-  padding-top: 20px; }
-  footer h1 {
-    font-family: 'PatuaOne-Regular';
-    margin-bottom: 30px;
-    font-size: 30px; }
-  footer .avatar {
-    background-color: #fff;
-    border: 2px solid white;
-    padding: 5px; }
+  color: #4b5555;
+  background-color: #EA8380;
+  font-family: 'PatuaOne-Regular';
+  margin-top: 50px;
+  padding-top: 12px; }
+  footer a {
+    color: #fff; }
+  footer p {
+    font-size: 16px; }
+    footer p .fa {
+      color: white;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px; }

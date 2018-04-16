@@ -3,6 +3,14 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
   font-family: 'GrandHotel-Regular';
   src: url("../../fonts/GrandHotel-Regular.ttf"); }
 
@@ -51,35 +59,44 @@
   src: url("../../fonts/showg.ttf"); }
 
 .sections {
-  margin-top: 30px; }
+  margin-top: 40px; }
   .sections h1 {
     font-family: 'PatuaOne-Regular';
     margin-top: 30px;
     font-size: 30px;
     color: #4b5555; }
   .sections .content {
-    width: 100%;
     background-image: url("../../img/v.svg");
     background-position: top center;
     background-repeat: no-repeat;
     font-family: 'PatuaOne-Regular'; }
     .sections .content .petits {
-      margin: 30px;
-      padding: 20px;
-      background-color: #F7FCA9;
+      margin: 15px;
+      padding: 15px;
+      background-color: #EA8380;
       margin-bottom: 30px;
       font-size: 18px;
       color: #4b5555; }
       .sections .content .petits .info {
-        background-color: grey; }
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
       .sections .content .petits h2 {
-        font-size: 25px; }
+        font-size: 25px;
+        margin-bottom: 15px; }
     .sections .content .grands {
-      margin: 10px;
-      padding: 20px;
+      margin: 15px;
+      padding: 15px;
       background-color: #F7FCA9;
       margin-bottom: 30px;
       font-size: 18px;
       color: #4b5555; }
+      .sections .content .grands .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
       .sections .content .grands h2 {
-        font-size: 25px; }
+        font-size: 25px;
+        margin-bottom: 15px; }
