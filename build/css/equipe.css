@@ -1,0 +1,39 @@
+.equipe {
+  font-family: 'PatuaOne-Regular';
+  background-color: #fff;
+  padding-top: 20px; }
+  .equipe h1 {
+    margin-bottom: 30px;
+    font-size: 30px; }
+  .equipe .avatar {
+    background-color: #fff;
+    border: 2px solid white;
+    padding: 5px; }
+
+.ttequipe {
+  background-color: #fff; }
+  .ttequipe .equipes {
+    background-color: #f7f2f6;
+    font-family: 'PatuaOne-Regular';
+    margin-top: 60px;
+    padding: 30px; }
+    .ttequipe .equipes .row {
+      margin: 0px; }
+      .ttequipe .equipes .row .titre {
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        background-color: #b4bdb3; }
+        .ttequipe .equipes .row .titre h2 {
+          font-size: 30px;
+          color: #4b5555; }
+      .ttequipe .equipes .row .competences {
+        padding: 15px;
+        background-color: #EA8380; }
+        .ttequipe .equipes .row .competences p {
+          font-size: 18px;
+          color: #fff; }
+      .ttequipe .equipes .row .personnel {
+        margin-top: 20px;
+        color: #4b5555; }

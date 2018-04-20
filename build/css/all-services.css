@@ -1,0 +1,10 @@
+.all-services {
+  background-color: #f7f2f6;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px; }
+  .all-services .media-front section article {
+    min-height: 60px; }
+    .all-services .media-front section article img {
+      margin-bottom: 0px; }

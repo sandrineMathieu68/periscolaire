@@ -1,0 +1,19 @@
+@import "color.scss";
+
+.all-services{
+	@include couleur(4,5);
+	margin-top: 30px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	.media-front{
+	section{
+		article{
+		min-height: 60px;
+		img{
+		margin-bottom: 0px;
+		}
+		}
+	}
+}
+}

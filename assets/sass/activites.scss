@@ -1,0 +1,5 @@
+@import "color.scss";
+
+.activites{
+	@include couleur(3,1);
+}

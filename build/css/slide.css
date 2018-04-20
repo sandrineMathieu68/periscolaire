@@ -1,0 +1,12 @@
+.slide {
+  margin-top: 20px; }
+  .slide .carousel-inner .carousel-item h3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    color: #fa4b08;
+    font-size: 30px; }
+  .slide .carousel-inner .carousel-item p {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    color: #fa4b08;
+    font-size: 20px; }

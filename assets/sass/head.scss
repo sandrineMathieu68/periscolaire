@@ -1,11 +1,11 @@
-// ###########################
-// ######### Head ############
-// ###########################
 @import "color.scss";
 body 
 {
     margin: 0;
     padding: 0;
-    @include couleur(2,1);
-    
-}
+    //@include couleur(8,6);
+    font-family: 'PlayfairDisplay-Regular';
+    background-image: url('../../img/bus9.svg') ;
+    background-position: top center;
+ 	background-repeat: no-repeat;
+} 

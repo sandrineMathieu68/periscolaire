@@ -3,8 +3,32 @@
   src: url("../../fonts/Courgette-Regular.ttf"); }
 
 @font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../../fonts/GrandHotel-Regular.ttf"); }
+
+@font-face {
+  font-family: 'HomemadeApple-Regular.ttf';
+  src: url("../../fonts/HomemadeApple-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url("../../fonts/Playball-Regular.ttf"); }
+
+@font-face {
   font-family: 'Pacifico-Regular';
   src: url("../../fonts/Pacifico-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Girl';
+  src: url("../../fonts/PlayGirl.ttf"); }
 
 @font-face {
   font-family: 'PlayfairDisplay-Regular';
@@ -26,43 +50,561 @@
   font-family: 'KGArrows';
   src: url("../../fonts/KGArrows.ttf"); }
 
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
+
+@font-face {
+  font-family: 'showg';
+  src: url("../../fonts/showg.ttf"); }
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #529972;
-  color: #b7b6a7; }
+  font-family: 'PlayfairDisplay-Regular';
+  background-image: url("../../img/bus9.svg");
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+header {
+  background: rgba(255, 255, 255, 0.45);
+  height: 180px;
+  margin-bottom: 30px;
+  padding-bottom: 10px; }
+  header h1 {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+    background-color: #4b5555;
+    font-family: 'PatuaOne-Regular';
+    font-size: 40px;
+    margin-right: 50px;
+    padding-left: 70px;
+    width: 37%;
+    color: #fff;
+    margin-top: 30px;
+    text-shadow: 2px 2px 2px #4b5555; }
+  header p {
+    position: absolute;
+    padding-left: 255px;
+    font-family: 'showg';
+    margin-right: 40px;
+    font-size: 25px;
+    color: #4b5555;
+    margin-top: 32px; }
+  header img {
+    position: absolute;
+    margin-left: 682px; }
+  header .carousel .img-fluid {
+    min-height: 250px;
+    max-height: 450px; }
 
 .menu {
-  font-size: 25px;
-  color: green; }
-  .menu nav .respons a {
+  padding-right: 0px;
+  padding-left: 0px;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  text-align: center; }
+  .menu #entete {
+    padding: 10px;
+    width: 100%;
+    background-color: #F7FCA9;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'showg';
     font-size: 25px;
-    color: green; }
-  .menu nav .respons button span {
-    color: pink;
-    font-size: 20px; }
-  .menu nav .respons .navi ul li {
-    background-color: #5b9a64;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 20px; }
-    .menu nav .respons .navi ul li i {
-      padding-top: 15px;
-      color: #d50024; }
-    .menu nav .respons .navi ul li a {
-      font-family: 'CaviarDreams_Bold';
-      color: black;
-      padding: 10px; }
-    .menu nav .respons .navi ul li a:hover {
-      font-family: 'Courgette-Regular';
-      background-color: #f4fab0;
-      color: #d50024; }
-    .menu nav .respons .navi ul li .choix {
-      background-color: #2f3951;
-      text-align: center;
-      color: #d50024; }
+    color: #4b5555; }
+  .menu #fixed-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); }
+    .menu #fixed-header nav {
+      width: 100%; }
+      .menu #fixed-header nav .respons {
+        width: 100%; }
+      .menu #fixed-header nav ul {
+        width: 100%;
+        margin: auto; }
+        .menu #fixed-header nav ul li {
+          margin-top: 200px;
+          background-color: #FF5C73;
+          margin: auto;
+          width: 12%; }
+          .menu #fixed-header nav ul li a {
+            font-family: 'PatuaOne-Regular';
+            color: #fff;
+            font-size: 16px; }
+            .menu #fixed-header nav ul li a .menu-item::before {
+              content: '';
+              display: block; }
+          .menu #fixed-header nav ul li i {
+            text-shadow: 1px 1px 1px #768775;
+            color: #fff;
+            font-size: 30px; }
+          .menu #fixed-header nav ul li a:hover {
+            background-color: #F7FCA9;
+            color: white; }
+        .menu #fixed-header nav ul li:hover {
+          background-color: white; }
+          .menu #fixed-header nav ul li:hover i {
+            color: #e65722; }
+          .menu #fixed-header nav ul li:hover a:hover {
+            color: #e65722; }
 
-.car {
-  background-color: yellow; }
-  .car .slide {
-    background-color: pink; }
+.infos {
+  background-color: #fff;
+  color: #4b5555;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-family: 'PatuaOne-Regular'; }
+  .infos .container {
+    background-color: #f7f2f6;
+    padding-bottom: 20px; }
+    .infos .container h4 {
+      padding-top: 20px;
+      font-size: 30px; }
+    .infos .container .ligne {
+      color: #ea8380;
+      text-shadow: 2px 2px  2px black;
+      font-family: 'dess';
+      font-size: 30px; }
+    .infos .container .mercredi {
+      color: #ea8380;
+      margin-left: 35px; }
+    .infos .container h6 {
+      margin-top: 30px;
+      font-size: 20px; }
+      .infos .container h6 img {
+        margin-right: 15px; }
+  .infos .deco {
+    color: #545455;
+    margin-top: 10px;
+    font-family: 'Redoura'; }
+    .infos .deco .avatar {
+      border: 2px solid #EA8380;
+      width: 50%; }
+
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../../fonts/Courgette-Regular.ttf"); }
+
+@font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../../fonts/GrandHotel-Regular.ttf"); }
+
+@font-face {
+  font-family: 'HomemadeApple-Regular.ttf';
+  src: url("../../fonts/HomemadeApple-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url("../../fonts/Playball-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url("../../fonts/Pacifico-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Girl';
+  src: url("../../fonts/PlayGirl.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: 'CaviarDreams_Bold';
+  src: url("../../fonts/CaviarDreams_Bold.ttf"); }
+
+@font-face {
+  font-family: 'Shorelines';
+  src: url("../../fonts/Shorelines.otf"); }
+
+@font-face {
+  font-family: 'Redoura';
+  src: url("../../fonts/Redoura.ttf"); }
+
+@font-face {
+  font-family: 'KGArrows';
+  src: url("../../fonts/KGArrows.ttf"); }
+
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
+
+@font-face {
+  font-family: 'showg';
+  src: url("../../fonts/showg.ttf"); }
+
+.sections {
+  margin-top: 40px; }
+  .sections h1 {
+    font-family: 'PatuaOne-Regular';
+    margin-top: 30px;
+    font-size: 30px;
+    color: #4b5555; }
+  .sections .content {
+    font-family: 'PatuaOne-Regular'; }
+    .sections .content .petits {
+      margin: 15px;
+      padding: 15px;
+      background-color: #EA8380;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #4b5555; }
+      .sections .content .petits .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
+      .sections .content .petits h2 {
+        font-size: 25px;
+        margin-bottom: 15px; }
+    .sections .content .grands {
+      margin: 15px;
+      padding: 15px;
+      background-color: #F7FCA9;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #4b5555; }
+      .sections .content .grands .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
+      .sections .content .grands h2 {
+        font-size: 25px;
+        margin-bottom: 15px; }
+
+.valeurs {
+  margin-top: 40px;
+  margin-bottom: 30px; }
+  .valeurs .cadre {
+    font-family: 'PatuaOne-Regular';
+    width: 200;
+    height: 140;
+    color: #4b5555; }
+    .valeurs .cadre h5 {
+      font-size: 22px; }
+      .valeurs .cadre h5 span {
+        color: #EA8380;
+        font-size: 35px; }
+    .valeurs .cadre p {
+      font-size: 18px; }
+
+.equipe {
+  font-family: 'PatuaOne-Regular';
+  background-color: #fff;
+  padding-top: 20px; }
+  .equipe h1 {
+    margin-bottom: 30px;
+    font-size: 30px; }
+  .equipe .avatar {
+    background-color: #fff;
+    border: 2px solid white;
+    padding: 5px; }
+
+.ttequipe {
+  background-color: #fff; }
+  .ttequipe .equipes {
+    background-color: #f7f2f6;
+    font-family: 'PatuaOne-Regular';
+    margin-top: 60px;
+    padding: 30px; }
+    .ttequipe .equipes .row {
+      margin: 0px; }
+      .ttequipe .equipes .row .titre {
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        background-color: #b4bdb3; }
+        .ttequipe .equipes .row .titre h2 {
+          font-size: 30px;
+          color: #4b5555; }
+      .ttequipe .equipes .row .competences {
+        padding: 15px;
+        background-color: #EA8380; }
+        .ttequipe .equipes .row .competences p {
+          font-size: 18px;
+          color: #fff; }
+      .ttequipe .equipes .row .personnel {
+        margin-top: 20px;
+        color: #4b5555; }
+
+.slide {
+  margin-top: 20px; }
+  .slide .carousel-inner .carousel-item h3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+    color: #fa4b08;
+    font-size: 30px; }
+  .slide .carousel-inner .carousel-item p {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    color: #fa4b08;
+    font-size: 20px; }
+
+.taxo {
+  margin-top: 50px; }
+  .taxo .anniversaires {
+    background-color: #f7f2f6;
+    margin-bottom: 50px; }
+    .taxo .anniversaires h1 {
+      display: none; }
+    .taxo .anniversaires .reservation {
+      background-color: #b05679;
+      margin: 30px;
+      padding: 30px; }
+      .taxo .anniversaires .reservation h3 {
+        font-family: 'PatuaOne-Regular';
+        font-size: 30px;
+        color: #fff; }
+      .taxo .anniversaires .reservation .ligne {
+        color: #fff;
+        font-family: 'KGArrows';
+        font-size: 20px;
+        margin-bottom: 15px; }
+    .taxo .anniversaires .festive {
+      background-color: #B05679;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: 'PatuaOne-Regular';
+      color: #fff; }
+      .taxo .anniversaires .festive h3 {
+        font-size: 30px;
+        color: #fff;
+        margin: 20px; }
+      .taxo .anniversaires .festive p {
+        padding-top: 20px;
+        font-size: 20px; }
+        .taxo .anniversaires .festive p i {
+          font-size: 40px;
+          padding-right: 3%; }
+
+.activites {
+  background-color: #ffff9f;
+  color: #ffff9f; }
+
+.services {
+  background-color: #ffff9f; }
+  .services .pedagogie {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 18px;
+    background-image: url("../../img/fam1.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 20px; }
+    .services .pedagogie .haut {
+      margin-top: 80px;
+      margin-left: 50px;
+      margin-right: 50px; }
+    .services .pedagogie .bas {
+      margin-top: 270px;
+      padding-left: 50px; }
+    .services .pedagogie h3 {
+      font-family: 'PatuaOne-Regular';
+      margin-top: 80px;
+      font-size: 28px;
+      margin-left: 50px;
+      color: #B4BDB3; }
+      .services .pedagogie h3 img {
+        padding-right: 30px; }
+  .services .prestations {
+    background-color: #B4BDB3;
+    font-family: 'PlayfairDisplay-Regular';
+    color: white;
+    padding: 50px; }
+    .services .prestations h3 {
+      font-family: 'PatuaOne-Regular';
+      font-size: 28px;
+      padding: 20px; }
+    .services .prestations p {
+      font-size: 18px; }
+      .services .prestations p i {
+        font-size: 30px;
+        margin-right: 10px; }
+
+.partenaires {
+  background-color: #FFF;
+  padding: 5px; }
+  .partenaires .divers p {
+    margin-bottom: 0; }
+
+.semaines {
+  background-color: #red; }
+
+.formulaire .inscription {
+  background-color: #fffd73; }
+
+.all-services {
+  background-color: #f7f2f6;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px; }
+  .all-services .media-front section article {
+    min-height: 60px; }
+    .all-services .media-front section article img {
+      margin-bottom: 0px; }
+
+.info-home {
+  font-family: 'PatuaOne-Regular';
+  margin-top: 40px;
+  color: #545455; }
+  .info-home .row .card .card-body {
+    background-color: yellow;
+    margin: 20px; }
+    .info-home .row .card .card-body h5 {
+      font-size: 22px; }
+      .info-home .row .card .card-body h5 img {
+        margin-right: 15px; }
+      .info-home .row .card .card-body h5 span {
+        color: red; }
+    .info-home .row .card .card-body p {
+      font-size: 18px; }
+    .info-home .row .card .card-body .mercredi {
+      color: red; }
+      .info-home .row .card .card-body .mercredi .vac {
+        color: #545455; }
+    .info-home .row .card .card-body .phone {
+      font-size: 25px; }
+    .info-home .row .card .card-body .tel {
+      color: red;
+      font-size: 40px; }
+    .info-home .row .card .card-body .adresse {
+      font-size: 23px; }
+
+.articles {
+  background-color: #B4BDB3; }
+
+.category {
+  background-color: #ffff9f;
+  padding-top: 2%; }
+
+.single {
+  width: 100%;
+  background-color: #e1daca;
+  margin-top: 30px;
+  padding: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 30px; }
+  .single h1 {
+    font-family: 'PatuaOne-Regular';
+    padding-left: 100px; }
+    .single h1 i {
+      margin-left: 30px; }
+  .single .elementor-widget-container {
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    text-align: center; }
+    .single .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: yellow;
+      font-size: 30px; }
+    .single .elementor-widget-container p {
+      min-height: 160px;
+      font-family: 'Playball-Regular';
+      color: yellow; }
+  .single .test-2 .elementor-widget-container {
+    min-height: 196px;
+    max-width: 500px;
+    color: white;
+    padding: 10px;
+    background-color: grey;
+    font-family: 'Playball-Regular';
+    text-align: center; }
+    .single .test-2 .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: yellow;
+      font-size: 30px; }
+    .single .test-2 .elementor-widget-container p {
+      min-height: 160px;
+      color: yellow; }
+  .single .autre-test {
+    background-color: grey; }
+    .single .autre-test .elementor-widget-container {
+      max-width: 100%; }
+      .single .autre-test .elementor-widget-container h2 {
+        font-family: 'PatuaOne-Regular';
+        color: blue;
+        font-size: 30px; }
+      .single .autre-test .elementor-widget-container p {
+        min-height: 160px;
+        color: yellow; }
+  .single .test-class-img .elementor-widget-container {
+    max-width: 100%;
+    background-color: yellow; }
+    .single .test-class-img .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: blue;
+      font-size: 30px; }
+    .single .test-class-img .elementor-widget-container p {
+      min-height: 160px;
+      color: yellow; }
+  .single .nouvelles .elementor-widget-container {
+    min-height: 260px;
+    max-width: 100%;
+    background-color: blue;
+    max-width: 100%; }
+    .single .nouvelles .elementor-widget-container h2 {
+      font-family: 'PatuaOne-Regular';
+      color: blue;
+      font-size: 30px; }
+    .single .nouvelles .elementor-widget-container p {
+      min-height: 60px;
+      color: yellow; }
+  .single li {
+    font-family: 'PatuaOne-Regular';
+    background-color: #e1daca;
+    color: #e1daca;
+    font-size: 40px;
+    list-style: none;
+    color: red;
+    font-size: 35px; }
+    .single li a {
+      font-size: 25px;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-decoration: none;
+      color: orange; }
+
+.content {
+  background-color: #f7f2f6; }
+
+.etiquettes {
+  background-color: #ffff9f; }
+
+.accueil {
+  background-color: #ffff9f;
+  padding-top: 30px;
+  font-family: 'PatuaOne-Regular'; }
+  .accueil h1 {
+    font-size: 30px;
+    padding-bottom: 30px; }
+
+footer {
+  color: #4b5555;
+  background-color: #FFFD73;
+  font-family: 'PatuaOne-Regular';
+  margin-top: 50px;
+  padding-top: 12px; }
+  footer a {
+    color: #fff; }
+  footer p {
+    font-size: 16px; }
+    footer p .fa {
+      color: white;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px; }

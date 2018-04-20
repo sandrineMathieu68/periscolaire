@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../../fonts/Courgette-Regular.ttf"); }
+
+@font-face {
+  font-family: 'dess';
+  src: url("../../fonts/dess.ttf"); }
+
+@font-face {
+  font-family: 'dessi';
+  src: url("../../fonts/dessi.ttf"); }
+
+@font-face {
+  font-family: 'GrandHotel-Regular';
+  src: url("../../fonts/GrandHotel-Regular.ttf"); }
+
+@font-face {
+  font-family: 'HomemadeApple-Regular.ttf';
+  src: url("../../fonts/HomemadeApple-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url("../../fonts/Playball-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url("../../fonts/Pacifico-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Girl';
+  src: url("../../fonts/PlayGirl.ttf"); }
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: 'CaviarDreams_Bold';
+  src: url("../../fonts/CaviarDreams_Bold.ttf"); }
+
+@font-face {
+  font-family: 'Shorelines';
+  src: url("../../fonts/Shorelines.otf"); }
+
+@font-face {
+  font-family: 'Redoura';
+  src: url("../../fonts/Redoura.ttf"); }
+
+@font-face {
+  font-family: 'KGArrows';
+  src: url("../../fonts/KGArrows.ttf"); }
+
+@font-face {
+  font-family: 'PatuaOne-Regular';
+  src: url("../../fonts/PatuaOne-Regular.ttf"); }
+
+@font-face {
+  font-family: 'showg';
+  src: url("../../fonts/showg.ttf"); }
+
+.sections {
+  margin-top: 40px; }
+  .sections h1 {
+    font-family: 'PatuaOne-Regular';
+    margin-top: 30px;
+    font-size: 30px;
+    color: #4b5555; }
+  .sections .content {
+    font-family: 'PatuaOne-Regular'; }
+    .sections .content .petits {
+      margin: 15px;
+      padding: 15px;
+      background-color: #EA8380;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #4b5555; }
+      .sections .content .petits .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
+      .sections .content .petits h2 {
+        font-size: 25px;
+        margin-bottom: 15px; }
+    .sections .content .grands {
+      margin: 15px;
+      padding: 15px;
+      background-color: #F7FCA9;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #4b5555; }
+      .sections .content .grands .info {
+        height: 260px;
+        padding: 18px;
+        background-color: grey;
+        color: white; }
+      .sections .content .grands h2 {
+        font-size: 25px;
+        margin-bottom: 15px; }

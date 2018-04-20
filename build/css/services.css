@@ -1,0 +1,38 @@
+.services {
+  background-color: #ffff9f; }
+  .services .pedagogie {
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 18px;
+    background-image: url("../../img/fam1.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 20px; }
+    .services .pedagogie .haut {
+      margin-top: 80px;
+      margin-left: 50px;
+      margin-right: 50px; }
+    .services .pedagogie .bas {
+      margin-top: 270px;
+      padding-left: 50px; }
+    .services .pedagogie h3 {
+      font-family: 'PatuaOne-Regular';
+      margin-top: 80px;
+      font-size: 28px;
+      margin-left: 50px;
+      color: #B4BDB3; }
+      .services .pedagogie h3 img {
+        padding-right: 30px; }
+  .services .prestations {
+    background-color: #B4BDB3;
+    font-family: 'PlayfairDisplay-Regular';
+    color: white;
+    padding: 50px; }
+    .services .prestations h3 {
+      font-family: 'PatuaOne-Regular';
+      font-size: 28px;
+      padding: 20px; }
+    .services .prestations p {
+      font-size: 18px; }
+      .services .prestations p i {
+        font-size: 30px;
+        margin-right: 10px; }

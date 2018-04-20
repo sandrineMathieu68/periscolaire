@@ -1,0 +1,26 @@
+.info-home {
+  font-family: 'PatuaOne-Regular';
+  margin-top: 40px;
+  color: #545455; }
+  .info-home .row .card .card-body {
+    background-color: yellow;
+    margin: 20px; }
+    .info-home .row .card .card-body h5 {
+      font-size: 22px; }
+      .info-home .row .card .card-body h5 img {
+        margin-right: 15px; }
+      .info-home .row .card .card-body h5 span {
+        color: red; }
+    .info-home .row .card .card-body p {
+      font-size: 18px; }
+    .info-home .row .card .card-body .mercredi {
+      color: red; }
+      .info-home .row .card .card-body .mercredi .vac {
+        color: #545455; }
+    .info-home .row .card .card-body .phone {
+      font-size: 25px; }
+    .info-home .row .card .card-body .tel {
+      color: red;
+      font-size: 40px; }
+    .info-home .row .card .card-body .adresse {
+      font-size: 23px; }

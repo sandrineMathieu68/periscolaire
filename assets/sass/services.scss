@@ -1,0 +1,56 @@
+@import "color.scss";
+
+.services{
+	@include couleur(1,5);
+
+	.pedagogie{	
+		font-family: 'PlayfairDisplay-Regular';
+		font-size: 18px;
+		background-image: url('../../img/fam1.jpg') ;
+    	background-repeat: no-repeat;
+    	color: white;
+    	margin-bottom: 20px;
+    	
+    	.haut{
+			margin-top: 80px;
+			margin-left: 50px;
+			margin-right: 50px;	
+    	}
+    	.bas{
+			margin-top: 270px;
+			padding-left: 50px;
+			
+    	}
+    	h3{
+    		font-family: 'PatuaOne-Regular';
+    		margin-top: 80px;
+    		font-size: 28px;
+    		margin-left: 50px;
+    		color: #B4BDB3;
+    		img{
+    			padding-right: 30px;
+    		}
+
+    	}
+	}
+	.prestations{
+		@include couleur(8,5);
+		font-family: 'PlayfairDisplay-Regular';
+		color: white;
+		padding: 50px;
+		h3{
+			font-family: 'PatuaOne-Regular';
+			font-size: 28px;
+			padding: 20px;
+
+		}
+		p{
+			font-size: 18px;
+
+			i{
+				font-size: 30px;
+				margin-right: 10px;
+			}
+		}
+	}
+}

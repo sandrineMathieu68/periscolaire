@@ -1,0 +1,15 @@
+@import "color.scss";
+
+.partenaires{
+	background-color: #FFF;
+	//@include couleur(4,5);
+	padding: 5px;
+	.divers{
+		//margin-top: 20px;
+		p{
+		margin-bottom: 0;
+
+		}
+	}
+
+}

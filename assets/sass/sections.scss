@@ -1,0 +1,63 @@
+@import "fonts.scss";
+.sections{
+
+	//@include couleur(8,6);
+	margin-top: 40px;
+	
+
+	h1{
+		font-family: 'PatuaOne-Regular';
+		margin-top: 30px;
+		font-size: 30px;
+		color: #4b5555;
+	}
+	.content{
+
+    	//background-image: url('../../img/v.svg') ;
+    	//background-position: top center;
+ 		//background-repeat: no-repeat;
+		font-family: 'PatuaOne-Regular';
+
+		.petits{
+			margin: 15px;
+			padding: 15px;
+			background-color: #EA8380;
+			margin-bottom: 30px;
+			font-size: 18px;
+			color: #4b5555;
+				.info{
+					height: 260px;			
+					padding: 18px;
+					background-color: grey;
+					color: white;
+				}
+			h2{
+				font-size: 25px;
+				margin-bottom: 15px;
+			}			
+		}		
+
+
+		.grands{
+			margin: 15px;
+			padding: 15px;
+			background-color: #F7FCA9;
+			margin-bottom: 30px;
+			font-size: 18px;
+			color: #4b5555;
+				.info{
+					height: 260px;			
+					padding: 18px;
+					background-color: grey;
+					color: white;
+				}
+			h2{
+				font-size: 25px;
+				margin-bottom: 15px;
+			}			
+		}
+
+
+	}
+
+}

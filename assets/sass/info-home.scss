@@ -1,0 +1,50 @@
+@import "color.scss";
+.info-home{
+	font-family: 'PatuaOne-Regular';
+	margin-top: 40px;
+	color: #545455;
+	.row{
+
+		.card{
+			//background-color: yellow;*/
+			//margin: 20px;
+			.card-body{
+			background-color: yellow;
+			margin: 20px;
+			h5{
+				font-size: 22px;
+				img{
+					margin-right: 15px;
+				}
+				span{
+					color: red;
+				}
+			}
+			p{
+				font-size: 18px;
+				
+			}
+			.mercredi{
+				color: red;
+				.vac{
+					color: #545455;
+				}
+			}
+			.phone{
+				font-size: 25px;
+				
+			}
+			.tel{
+				//font-family: 'showg';
+				color: red;
+				font-size: 40px;
+				}
+				.adresse{
+					font-size: 23px;
+				}
+			}
+		}
+	}
+}
+
+
